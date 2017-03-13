@@ -1,8 +1,12 @@
-<h1>Log in Page</h1>
+<h1 id="log-title">Log in Page</h1>
 
-<form class="" action="/user/login" method="post">
-  <input type="text" name="username" value="" placeholder="username">
-  <input type="password" name="password" value="" placeholder="password">
-  <input type="submit" name="" value="Log in!">
-</form>
-{{message}}
+<div class="form-container">
+  <form class="form-login" action="/user/login" method="post">
+    <input type="text" name="username" value="" placeholder="username">
+    <br>
+    <input type="password" name="password" value="" placeholder="password">
+    <br>
+    <input class="form-button" type="submit" name="" value="Log in!">
+  </form>
+  {{message}}
+</div>

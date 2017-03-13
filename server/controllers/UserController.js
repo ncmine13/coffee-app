@@ -29,7 +29,6 @@ router.post('/register', function(req, res){
           var userDbEntry = {};
           userDbEntry.username = req.body.username;
           userDbEntry.password = hash;
-
           //now we can use our model to create an entry in the db
           User.create(userDbEntry, function(err, user){
             if (user) {
@@ -37,10 +36,8 @@ router.post('/register', function(req, res){
               req.session.username = user.username;
               req.session.userId = user.id
               req.session.isLoggedIn = true;
-
               // redirect to homepage
-
-              res.render('home')
+              res.redirect('/user/profile')
             }
             else {
               res.send('there was an error')
@@ -65,10 +62,6 @@ router.get('/login', function(req, res){
 router.post('/login', function(req, res){
   //first query the database to find the user
   User.findOne({username: req.body.username}, function(err, user){
-    // console.log(req.body, ' this is req.body')
-    // console.log(user.password)
-    // console.log(req.body.password, ' this is req.body')
-    // console.log(err)
     //if there is a user, then unhash their password
     if (user) {
       bcrypt.compare(req.body.password, user.password, function(err, match){
@@ -82,7 +75,7 @@ router.post('/login', function(req, res){
           req.session.isLoggedIn = true;
           console.log(req.session)
 
-          res.redirect('/user/home')
+          res.redirect('/user/profile')
         }
         else {
           //send them a message wrong username or password
@@ -98,11 +91,12 @@ router.post('/login', function(req, res){
   })
 });
 
-router.get('/home', function(req, res){
+router.get('/profile', function(req, res){
   console.log(req.session)
-  res.render('home', {});
-  console.log('home works');
+  res.render('profile', {});
+  console.log('profile works');
 });
+
 
 
 module.exports = router;
