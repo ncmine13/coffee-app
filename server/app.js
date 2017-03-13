@@ -21,9 +21,11 @@ app.set('view engine', 'hbs');
 
 var UserController = require('./controllers/UserController');
 var DrinkController = require('./controllers/DrinkController');
+var ChoiceController = require('./controllers/ChoiceController')
 
 app.use('/coffee', DrinkController);
 app.use('/user', UserController);
+app.use('/path', ChoiceController);
 
 
 

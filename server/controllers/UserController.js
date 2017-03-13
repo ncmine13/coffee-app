@@ -8,7 +8,6 @@ router.get('/', function(req, res){
 	res.send("success");
 })
 
-
 router.get('/register', function(req, res){
   res.render('register', {});
   console.log('register works');
