@@ -1,18 +1,15 @@
 var mongoose = require('mongoose');
 
 var DrinkSchema = new mongoose.Schema({
-	name: String,//Mocha
-	size: String,//small
-	type: String,//espresso
-	caffeineLevel: String,//low
-	sweetnessLevel: Number,//8
-	qualities: Array,//["sugary", "chocolatey", "fun"]
-	isHealthy: Boolean,//False
-	calories: Number,//500,
-	isHot: Boolean,//True,
-	imageURL: String,
-	beanType: String,
-	origin: String
+	name: String,
+	type: String,
+	isSweet: Boolean,
+	isHealthy: Boolean,
+	hasMilk: Boolean,
+	isHot: Boolean,
+	loveOrCaffeine: String,
+	energy: String,
+	caffeineLevel: Number
 })
 
 var drinkModel = mongoose.model('Drink', DrinkSchema);

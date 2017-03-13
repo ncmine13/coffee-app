@@ -15,12 +15,13 @@ router.post('/coffeeDB', function(req, res){
 	var drink = new Drink({
 		name: req.body.name,
 		type: req.body.type,
-		caffeineLevel: req.body.type,
-		sweetnessLevel: req.body.sweetnessLevel,
+		isSweet: req.body.isSweet,
 		isHealthy: req.body.isHealthy,
-		calories: req.body.calories,
+		hasMilk: req.body.hasMilk,
 		isHot: req.body.isHot,
-		beanOrigin: req.body.beanOrigin
+		loveOrCaffeine: req.body.loveOrCaffeine,
+		energy: req.body.energy,
+		caffeineLevel: req.body.caffeineLevel
 	});
 	drink.save();
 	res.send("posted!");
