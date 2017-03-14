@@ -32,11 +32,13 @@ router.post('/register', function(req, res){
           User.create(userDbEntry, function(err, user){
             if (user) {
               //if user was created, initiate there session
+
               req.session.username = user.username;
               req.session.userId = user.id
               req.session.isLoggedIn = true;
               // redirect to homepage
               res.redirect('/user/profile')
+ 		  	  console.log(user.username)
             }
             else {
               res.send('there was an error')
@@ -91,9 +93,20 @@ router.post('/login', function(req, res){
 });
 
 router.get('/profile', function(req, res){
-  console.log(req.session)
-  res.render('profile', {});
-  console.log('profile works');
+  console.log(req.session, ' hey this is the seesssionnnnn in the profile route');
+  console.log('profile clicked')
+  res.render('profile', {name: req.session.username})
+});
+
+router.post('/profile', function(req, res){
+  console.log(req.body);
+  res.render('profile')
+});
+
+router.get('/logout', function(req, res){
+  req.session.destroy(function(err){
+    res.redirect('/user/login')
+  });
 });
 
 

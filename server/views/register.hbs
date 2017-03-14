@@ -1,11 +1,23 @@
-  <h1 id="reg-title">Register</h1>
+<div class="header">
+  <ul>
+    <a href="/user/profile"><li>Profile</li></a>
+    <a href="#"><li>Feed</li></a>
+    <a href="#"><li>Coffee Near Me</li></a>
+    <a href="#"><li>Drink Of The Day</li></a>
+  </ul>
+</div>
+
 <div class="form-container">
   <form class="form-register" action="/user/register" method="post">
+    <h1 id="reg-title">Register</h1>
+    <br>
     <input type="text" name="username" value="" placeholder="username">
     <br>
     <input type="password" name="password" value="" placeholder="password">
     <br>
     <input class="form-button" type="submit" name=" " value="Register!">
   </form>
-  {{message}}
+</div>
+<div class="error">
+<p>{{message}}</p>
 </div>
