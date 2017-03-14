@@ -1,17 +1,12 @@
 var express = require('express');
 var router = express.Router();
 var User = require('../models/User');
-var Drink = require('../models/Drink');
-var bcrypt = require('bcryptjs');
-
-
-
-
+var bodyParser = require('body-parser');
+var path = require('path');
+var mongoose = require('mongoose');
+//var Drink = require('../../../models/Drink');
 router.get('/', function(req, res){
-	res.render('question')
+	res.render('question');
 })
-
-
-
 
 module.exports = router;
