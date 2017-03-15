@@ -1,21 +1,28 @@
+<div class="body">
 
-<div class="header">
-  <ul>
-    <a href="/user/profile"><li>Profile</li></a>
-    <a href="#"><li>Feed</li></a>
-    <a href="#"><li>Coffee Near Me</li></a>
-    <a href="#"><li>Drink Of The Day</li></a>
-    <a class="logout"href="/user/login"><li>Log Out</li></a>
-  </ul>
-</div>
-<div class="main">
-  <h1 class="hey">Hey {{name}}, </h1>
-</div>
-<div class="drinks-container">
-  <h2>{{name}}'s favorite drinks</h2>
-  {{#each favoriteDrinks}}
-  <div class="favD">
-    {{this.name}}
-  </div>
-    {{/each}}
-</div>
+  <div class="main">
+
+    <h1 class="username">{{name}}</h1>
+
+      <div class="drinks-container">
+        <h2>Your Favorite Drinks</h2>
+
+          <div class="favDrinksScroll">
+            {{#each favoriteDrinks}}
+              <h3>{{this.name}}</h3>
+                <ul>
+                  <li>{{this.type}}</li>
+                  <li>{{this.cravingSatisfied}}</li>
+                  <li>{{this.calories}}</li>
+                  <li>{{this.ingredients}}</li>
+                  <li>{{this.image}}</li>
+                </ul>
+            {{/each}}
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
