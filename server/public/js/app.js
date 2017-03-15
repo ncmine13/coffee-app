@@ -1,3 +1,6 @@
+
+
+
 var drink = " "
 var sweet = " "
 var caffeine = " "
@@ -138,7 +141,6 @@ function checkDrink(){
 			}
 		}
 	}
-
 	window.location = "/coffee/drink/" + drink;
 	console.log(drink);
 }

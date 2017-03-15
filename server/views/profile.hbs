@@ -1,3 +1,4 @@
+
 <div class="header">
   <ul>
     <a href="/user/profile"><li>Profile</li></a>
@@ -9,4 +10,12 @@
 </div>
 <div class="main">
   <h1 class="hey">Hey {{name}}, </h1>
+</div>
+<div class="drinks-container">
+  <h2>{{name}}'s favorite drinks</h2>
+  {{#each favoriteDrinks}}
+  <div class="favD">
+    {{this.name}}
+  </div>
+    {{/each}}
 </div>
