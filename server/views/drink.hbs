@@ -1,3 +1,15 @@
-<h1 style="color: white;" class="drinkName">Our recommendation: {{name}}</h1>
-<h2 style="color: white;">{{type}}</h2>
-<img class="drink" src="/images/mocha.jpeg">
+<div class ="drinkSpecs">
+	<h1 style="color: white;" class="drinkHeader">Our recommendation: <span class ="drinkNAme">{{name}}<span></h1>
+	<div class="pic">
+		<img class="image" src="/images/coffeeCup.jpeg">
+	</div>
+	<div class="drinkDescriptions">
+		<ul class="drinkList">
+			<li>{{type}}</li>
+			<li>{{cravingSatisfied}}</li>
+			<li>{{calories}}</li>
+			<li>{{ingredients}}</li>
+		</ul>
+	</div>
+	{{!-- <h3 style="color: white;">{{type}}</h3> --}}
+</div>
