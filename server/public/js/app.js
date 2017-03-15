@@ -1,6 +1,3 @@
-
-
-
 var drink = " "
 var sweet = " "
 var caffeine = " "
