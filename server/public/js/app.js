@@ -137,7 +137,6 @@ function checkDrink(){
 			}
 		}
 	}
-
 	window.location = "/coffee/drink/" + drink;
 	console.log(drink);
 }

@@ -95,7 +95,14 @@ router.post('/login', function(req, res){
 router.get('/profile', function(req, res){
   console.log(req.session, ' hey this is the seesssionnnnn in the profile route');
   console.log('profile clicked')
-  res.render('profile', {name: req.session.username})
+	console.log(req.session.userId, "this is req.session.userId")
+	User
+	.findById(req.session.userId)
+	.populate('favoriteDrinks')
+	.exec(function (err, user){
+  	 res.render('profile', {name: req.session.username, favoriteDrinks: user.favoriteDrinks})
+	});
+
 });
 
 router.post('/profile', function(req, res){
