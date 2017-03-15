@@ -22,16 +22,22 @@ router.post('/coffeeDB', function(req, res){
 	var drink = new Drink({
 		name: req.body.name,
 		type: req.body.type,
-		isSweet: req.body.isSweet,
-		isHealthy: req.body.isHealthy,
-		hasMilk: req.body.hasMilk,
-		isHot: req.body.isHot,
-		loveOrCaffeine: req.body.loveOrCaffeine,
-		energy: req.body.energy,
-		caffeineLevel: req.body.caffeineLevel
+		cravingSatisfied: req.body.cravingSatisfied,
+		calories: req.body.calories,
+		ingredients: req.body.ingredients,
+		image: req.body.image,
 	});
 	drink.save();
 	res.send("posted!");
+})
+
+router.delete('/coffeeDB/:id', function(req, res){
+	var id = req.params.id;
+
+	Drink.findById(id, function(err, drink){
+		drink.remove();
+		res.send("success on delete");
+	})
 })
 
 module.exports = router;

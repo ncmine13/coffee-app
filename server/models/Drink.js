@@ -3,13 +3,10 @@ var mongoose = require('mongoose');
 var DrinkSchema = new mongoose.Schema({
 	name: String,
 	type: String,
-	isSweet: Boolean,
-	isHealthy: Boolean,
-	hasMilk: Boolean,
-	isHot: Boolean,
-	loveOrCaffeine: String,
-	energy: String,
-	caffeineLevel: Number
+	cravingSatisfied: String,
+	calories: String,
+	ingredients: String,
+	image: String
 })
 
 var drinkModel = mongoose.model('Drink', DrinkSchema);

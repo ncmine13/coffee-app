@@ -78,62 +78,61 @@ function checkDrink(){
 		if (caffeine) {
 			if (hot) {
 				if (flavor) {
-					drink = 'mocha'
-
+					drink = 'Mocha'
 				}else {
-					drink = 'vanilla latte'
+					drink = 'Vanilla Latte';
 				}
 			}else {
 				if (flavor) {
-					drink = 'iced mocha';
+					drink = 'Iced Mocha';
 				}
 				else {
-					drink = 'iced vanilla latte'
+					drink = 'Iced Vanilla Latte';
 				}
 			}
 		}else {
 			if (hot) {
 				if (flavor) {
-					drink = 'hot chocolate'
+					drink = 'Hot Chocolate'
 				}else {
-					drink = 'chai latte'
+					drink = 'Chai Latte'
 				}
 			}else {
 				if (flavor) {
-					drink = 'chocolate milk'
+					drink = 'Chocolate Milk'
 				} else {
-					drink = 'iced chai'
+					drink = 'Iced Chai'
 				}
 			}
 		}
-	}else {
+	} else {
 		if (caffeine) {
 			if (hot) {
 				if (flavor) {
-					drink = 'latte'
+					drink = 'Latte';
 				}else{
-					drink = 'coffee'
+					drink = 'Coffee';
 				}
 
 			} else {
 				if (flavor) {
-					drink = 'iced latte';
+					drink = 'Iced Latte';
 				}else {
-					drink = 'iced coffee'
+					drink = 'Cold Brew';
 				}
 			}
 		} else{
 			if (hot) {
 				if (flavor) {
-					drink = 'chamamile latte'
+					drink = 'Steamer';
 				} else {
-					drink = 'chamamile tea'
+					drink = 'Chamomile tea';
 				}
 			} else {
 				if (flavor) {
-					drink = 'iced blueberry latte'
+					drink = 'Decaf Iced Latte';
 				} else{
-					drink = 'iced blueberry tea'
+					drink = 'Iced Blueberry Tea';
 				}
 			}
 		}
