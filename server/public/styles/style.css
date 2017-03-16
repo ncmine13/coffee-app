@@ -6,7 +6,7 @@ body {
   margin: 0px;
   background-color: rgba(255, 255, 255, 0.8);
   font-family: 'Cabin', sans-serif;
-  height: 723px;
+  height: 450px;
   background-image: url('/images/homepic.jpg');
   background-size: 100%;
   background-color: white;
@@ -16,9 +16,16 @@ body {
 .header {
   background: #36dbac;
   height: 60px;
+<<<<<<< HEAD
   width: 100%;
   top: 0px;
   position: fixed;
+=======
+  width: auto;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+>>>>>>> thursdaystyles
 }
 .header ul {
   text-align: right;
@@ -161,73 +168,43 @@ body {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   transition: all .2s;
 }
-.drinks-container {
-  display: flex;
-  border: 1px solid grey;
-  justify-content: center;
-  height: auto;
-  width: 800px;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: 20px 20px 20px 0px;
-  padding: 5px;
-  background: rgba(255, 255, 255, 0.4);
-}
-.favDrinksScroll {
-  overflow: auto;
-  max-height: 75vh;
-  max-width: 800px;
-  margin: 5px;
-  padding: 5px;
-  border: 1px solid grey;
-}
-.main {
-  display: flex;
-  height: auto;
-}
-.favDrinkTitle {
-  font-size: 35px;
-  margin: 15px;
-}
 .username {
   font-size: 45px;
   text-align: left;
   margin: 10px;
-}
-.bodyProfile {
-  height: 500px;
-  width: 100%;
-}
-.userInfo {
-  justify-content: flex-start;
-  width: 500px;
-  margin: 20px 30px 20px 10px;
-  border: 1px solid grey;
-  padding: 5px;
-  background: rgba(255, 255, 255, 0.4);
+  color: white;
 }
 .buttonDiv {
-  padding: 20px;
+  padding: 5px;
   position: fixed;
-  margin-left: 260px;
   bottom: 180px;
+  display: inline;
+  width: 100%;
 }
 .left-option {
-  margin-right: 50px;
+  margin-left: 250px;
 }
 .right-option {
-  margin-left: 50px;
+  margin: 5px;
+  float: right;
+  margin-right: 250px;
 }
 .h1Holder {
-  margin-top: 70px;
+  height: 100px;
 }
 .do-you-want {
   font-family: 'Raleway', sans-serif;
   font-weight: lighter;
   font-size: 55px;
-  margin-left: 260px;
   color: white;
   text-shadow: 0px 1px 0px #443f3f;
+  align-items: center;
+  margin-left: 350px;
+  margin-top: 150px;
+}
+.mainquestion {
+  position: fixed;
+  display: flex;
 }
 img.logo {
   width: 4em;
@@ -236,7 +213,7 @@ img.logo {
 }
 .recommendDrink {
   padding: 30px 10px;
-  width: 250px;
+  width: 300px;
   border: none;
   border-radius: 4px;
   font-size: 27px;
@@ -244,7 +221,7 @@ img.logo {
   box-shadow: 2px 1px 5px rgba(35, 30, 30, 0.8);
   background-color: #0E2447;
   color: white;
-  margin: 50px 0px 40px 0px;
+  margin: 100px 0px 40px 0px;
 }
 .recommendDrink:hover {
   transform: scale(1.025);
@@ -253,7 +230,7 @@ img.logo {
 }
 .drinkLibrary {
   padding: 30px 10px;
-  width: 250px;
+  width: 300px;
   border: none;
   border-radius: 4px;
   font-size: 27px;
@@ -261,17 +238,67 @@ img.logo {
   box-shadow: 2px 1px 5px rgba(35, 30, 30, 0.8);
   background-color: #0E2447;
   color: white;
-  margin: 50px 0px 40px 0px;
+  margin: 100px 0px 40px 0px;
 }
 .drinkLibrary:hover {
   transform: scale(1.025);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   transition: all .2s;
 }
+.lists {
+  margin: 5px 10px 10px 10px;
+  padding: 5px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+  color: white;
+  background: rgba(54, 219, 172, 0.5);
+  text-shadow: 0px 1px 0px #443f3f;
+  border-radius: 3px;
+}
+.attrH {
+  margin-top: 6px;
+  color: white;
+  text-shadow: 0px 1px 0px #443f3f;
+}
 .buttonsP {
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  margin: 15px 15px 15px 15px;
+  width: 25%;
+  float: right;
+  margin: 10px;
+  height: 500px;
+}
+.drinks-container {
+  width: 45%;
+  margin: 0px 10px 10px 10px;
+  float: left;
+  height: 300px;
+  margin: 10px;
+}
+.userInfo {
+  display: inline;
+  background: rgba(54, 219, 172, 0.5);
+  width: 25%;
+  text-align: center;
+  float: left;
+  height: 450px;
+  margin: 90px 10px 10px 10px;
+  border-radius: 3px;
+}
+.favDrinksScroll {
+  overflow-y: auto;
+  max-height: 70vh;
+  margin: 0px;
+  padding: 5px;
+}
+.favDrinkTitle {
+  font-size: 35px;
+  margin: 15px;
+  color: white;
+  text-shadow: 0px 1px 0px #443f3f;
+  text-align: center;
+}
+.bodyP {
+  margin-top: 75px;
 }
 ul.rig {
   list-style: none;
