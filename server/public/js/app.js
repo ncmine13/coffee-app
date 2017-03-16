@@ -132,7 +132,7 @@ function checkDrink(){
 				if (flavor) {
 					drink = 'Decaf Iced Latte';
 				} else{
-					drink = 'Testing2';
+					drink = 'Blueberry Iced Tea';
 				}
 			}
 		}
