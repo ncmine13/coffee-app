@@ -9,20 +9,20 @@ $('.left-option').on('click', function(e){
 		if($(this).text() === 'sweet?'){
 			sweet = true;
 			$('.left-option').text('with caffeine?');
-			$('.right-option').text('without caffeine')
+			$('.right-option').text('without caffeine?');
 
 		}	else if ($(this).text() ==='with caffeine?'){
 			caffeine = true
-			$('.left-option').text('hot');
-			$('.right-option').text('cold');
-		} else if($(this).text()=== 'hot'){
+			$('.left-option').text('hot?');
+			$('.right-option').text('cold?');
+		} else if($(this).text()=== 'hot?'){
 			hot = true;
 			if (sweet) {
 				$('.left-option').text('with chocolate?');
-				$('.right-option').text('without caffeine');
+				$('.right-option').text('without chocolate?');
 			} else{
 				$('.left-option').text('with milk?');
-				$('.right-option').text('without milk');
+				$('.right-option').text('without milk?');
 			}
 		}
 		else {
@@ -43,10 +43,10 @@ $('.right-option').on('click', function(e){
 		if($(this).text() === 'unsweetened?'){
 			sweet = false;
 			$('.left-option').text('with caffeine?');
-			$('.right-option').text('without caffeine?')
+			$('.right-option').text('without caffeine?');
 
 		}	else if ($(this).text() === 'without caffeine?'){
-			caffeine = false
+			caffeine = false;
 			$('.left-option').text('hot?');
 			$('.right-option').text('cold?');
 
