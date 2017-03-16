@@ -16,7 +16,8 @@ body {
 .header {
   background: #36dbac;
   height: 60px;
-  width: auto;
+  width: 100%;
+  position: fixed;
 }
 .header ul {
   text-align: right;
@@ -270,4 +271,18 @@ img.logo {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   margin: 15px 15px 15px 15px;
+}
+ul.rig {
+  list-style: none;
+  font-size: 0px;
+}
+ul.rig li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px;
+  font-size: 0.5rem;
+  color: white;
+}
+.libraryImage {
+  height: 200px;
 }
