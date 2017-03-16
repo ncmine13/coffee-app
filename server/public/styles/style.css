@@ -1,5 +1,4 @@
 html {
-  background-image: url(http://baristasdailygrind.com/wp-content/uploads/2014/05/baristas-home-page-e1413916513686.jpg);
   background-size: 100%;
   margin: 0px;
 }
@@ -8,26 +7,32 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   font-family: 'Cabin', sans-serif;
   height: 723px;
-  background-image: url(http://baristasdailygrind.com/wp-content/uploads/2014/05/baristas-home-page-e1413916513686.jpg);
+  background-image: url('/images/homepic.jpg');
   background-size: 100%;
   background-color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .header {
   background: #36dbac;
-  height: 45px;
+  height: 60px;
   width: auto;
 }
 .header ul {
   text-align: right;
+  display: inline;
+  float: right;
+  margin: 20px 10px 10px 10px;
 }
 .header ul li {
   padding: 5px 10px 5px 5px;
   text-decoration: none;
   display: inline-block;
-  margin: 7px 10px 5px 5px;
+  margin: 0px 10px 5px 5px;
   font-family: 'Cabin', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: black;
+  align-content: flex-end;
 }
 .header ul li:hover {
   color: white;
@@ -159,16 +164,17 @@ body {
   border: 1px solid grey;
   justify-content: center;
   height: auto;
-  width: 900px;
+  width: 800px;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 20px 50px 50px 0px;
+  margin: 20px 20px 50px 0px;
   padding: 5px;
+  background: rgba(54, 219, 172, 0.3);
 }
 .favDrinksScroll {
   overflow: auto;
   max-height: 75vh;
-  max-width: 900px;
+  max-width: 800px;
   margin: 5px;
   padding: 5px;
   border: 1px solid grey;
@@ -184,14 +190,18 @@ body {
 .username {
   font-size: 45px;
   text-align: left;
+  margin: 10px;
 }
 .bodyProfile {
   height: 500px;
+  width: 100%;
 }
 .userInfo {
   justify-content: flex-start;
-  width: 450px;
-  margin: 10px;
+  width: 500px;
+  margin: 20px 30px 30px 10px;
+  border: 1px solid grey;
+  padding: 5px;
 }
 .buttonDiv {
   padding: 20px;
@@ -215,4 +225,48 @@ body {
   margin-left: 260px;
   color: white;
   text-shadow: 0px 1px 0px #443f3f;
+}
+img.logo {
+  width: 4em;
+  margin: 0px 0px 0px 10px;
+  display: inline;
+}
+.recommendDrink {
+  padding: 30px 10px;
+  width: 250px;
+  border: none;
+  border-radius: 4px;
+  font-size: 27px;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 2px 1px 5px rgba(35, 30, 30, 0.8);
+  background-color: #0E2447;
+  color: white;
+  margin: 50px 0px 40px 0px;
+}
+.recommendDrink:hover {
+  transform: scale(1.025);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+  transition: all .2s;
+}
+.drinkLibrary {
+  padding: 30px 10px;
+  width: 250px;
+  border: none;
+  border-radius: 4px;
+  font-size: 27px;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 2px 1px 5px rgba(35, 30, 30, 0.8);
+  background-color: #0E2447;
+  color: white;
+  margin: 50px 0px 40px 0px;
+}
+.drinkLibrary:hover {
+  transform: scale(1.025);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+  transition: all .2s;
+}
+.buttonsP {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin: 15px 15px 15px 15px;
 }
