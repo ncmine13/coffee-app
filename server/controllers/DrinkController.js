@@ -36,6 +36,22 @@ router.post('/coffeeDB', function(req, res){
 	res.send("posted!");
 })
 
+router.patch('/coffeeDB/:id', function(req, res){
+	var id = req.params.id;
+	var newInfo = req.body;
+
+	Drink.findById(id, function(err, drink){
+		drink.name = newInfo.name;
+		drink.type = newInfo.type;
+		drink.cravingSatisfied = newInfo.cravingSatisfied;
+		drink.calories = newInfo.calories;
+		drink.ingredients = newInfo.ingredients;
+		drink.image = newInfo.image;
+		drink.save();
+		res.send("success on patch")
+	})
+})
+
 router.delete('/coffeeDB/:id', function(req, res){
 	var id = req.params.id;
 
