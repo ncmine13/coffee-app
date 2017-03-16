@@ -8,6 +8,9 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   font-family: 'Cabin', sans-serif;
   height: 723px;
+  background-image: url(http://baristasdailygrind.com/wp-content/uploads/2014/05/baristas-home-page-e1413916513686.jpg);
+  background-size: 100%;
+  background-color: white;
 }
 .header {
   background: #36dbac;
@@ -82,48 +85,74 @@ body {
   font-family: 'Cabin', sans-serif;
 }
 .drinkSpecs {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: rgba(54, 219, 172, 0.85);
-  width: 35%;
-  margin-left: 32%;
-  margin-top: 5%;
+  background-color: rgba(54, 219, 172, 0.75);
+  display: block;
+  width: 100%;
   height: 450px;
-  border-radius: 5px;
+  float: right;
+  margin: 0px;
+  margin-top: 95px;
 }
 .drinkHeader {
-  margin-left: 3%;
-  margin-top: -30%;
+  text-align: center;
+  color: white;
   font-weight: lighter;
 }
 .drinkName {
   font-size: 45px;
-  display: block;
-  text-align: right;
-  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: -2%;
 }
 .drinkDescriptions {
   margin-top: 0;
   display: flex;
   flex-direction: column;
   position: fixed;
-  bottom: 11%;
-}
-.pic {
-  height: 0px;
-  margin-left: 18%;
-  margin-bottom: 50%;
+  bottom: 8%;
+  left: 30%;
 }
 .drinkList {
   list-style: none;
   color: white;
   font-family: 'Cabin', sans-serif;
   line-height: 1.5em;
+  text-align: center;
 }
 .image {
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(35, 30, 30, 0.4);
+  height: 200px;
+  margin-top: 0;
+  margin-left: 41%;
+  position: fixed;
+  bottom: 30%;
+}
+.main {
+  background-color: rgba(54, 219, 172, 0.75);
+  display: block;
+  width: 100%;
+  height: 400px;
+  float: right;
+  margin: 0px;
+  margin-top: 95px;
+}
+.buttons {
+  padding: 30px 10px;
+  width: 250px;
+  border: none;
+  border-radius: 4px;
+  font-size: 27px;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 2px 1px 5px rgba(35, 30, 30, 0.8);
+  background-color: #0E2447;
+  color: white;
+}
+.buttons:hover {
+  transform: scale(1.025);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+  transition: all .2s;
 }
 .drinks-container {
   display: flex;
@@ -163,4 +192,27 @@ body {
   justify-content: flex-start;
   width: 450px;
   margin: 10px;
+}
+.buttonDiv {
+  padding: 20px;
+  position: fixed;
+  margin-left: 260px;
+  bottom: 180px;
+}
+.left-option {
+  margin-right: 50px;
+}
+.right-option {
+  margin-left: 50px;
+}
+.h1Holder {
+  margin-top: 70px;
+}
+.do-you-want {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  font-size: 55px;
+  margin-left: 260px;
+  color: white;
+  text-shadow: 0px 1px 0px #443f3f;
 }

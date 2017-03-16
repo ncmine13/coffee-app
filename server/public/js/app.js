@@ -6,23 +6,23 @@ var flavor = " "
 
 $('.left-option').on('click', function(e){
 
-		if($(this).text() === 'Sweet'){
+		if($(this).text() === 'sweet?'){
 			sweet = true;
-			$('.left-option').text('Caffeine?');
-			$('.right-option').text('No Caffeine')
+			$('.left-option').text('with caffeine?');
+			$('.right-option').text('without caffeine?');
 
-		}	else if ($(this).text() ==='Caffeine?'){
+		}	else if ($(this).text() ==='with caffeine?'){
 			caffeine = true
-			$('.left-option').text('Hot');
-			$('.right-option').text('Not Hot');
-		} else if($(this).text()=== 'Hot'){
+			$('.left-option').text('hot?');
+			$('.right-option').text('cold?');
+		} else if($(this).text()=== 'hot?'){
 			hot = true;
 			if (sweet) {
-				$('.left-option').text('Chocolate');
-				$('.right-option').text('No Chocolate');
+				$('.left-option').text('with chocolate?');
+				$('.right-option').text('without chocolate?');
 			} else{
-				$('.left-option').text('Milk');
-				$('.right-option').text('No Milk');
+				$('.left-option').text('with milk?');
+				$('.right-option').text('without milk?');
 			}
 		}
 		else {
@@ -40,24 +40,24 @@ $('.left-option').on('click', function(e){
 
 $('.right-option').on('click', function(e){
 
-		if($(this).text() === 'Not sweet'){
+		if($(this).text() === 'unsweetened?'){
 			sweet = false;
-			$('.left-option').text('Caffeine?');
-			$('.right-option').text('No Caffeine')
+			$('.left-option').text('with caffeine?');
+			$('.right-option').text('without caffeine?');
 
-		}	else if ($(this).text() === 'No Caffeine'){
-			caffeine = false
-			$('.left-option').text('Hot');
-			$('.right-option').text('Not Hot');
+		}	else if ($(this).text() === 'without caffeine?'){
+			caffeine = false;
+			$('.left-option').text('hot?');
+			$('.right-option').text('cold?');
 
-		} else if($(this).text() === 'Not Hot'){
+		} else if($(this).text() === 'hot?'){
 			hot = false;
 			if (sweet) {
-				$('.left-option').text('Chocolate');
-				$('.right-option').text('No Chocolate');
+				$('.left-option').text('with chocolate?');
+				$('.right-option').text('without chocolate?');
 			} else{
-				$('.left-option').text('Milk');
-				$('.right-option').text('No Milk');
+				$('.left-option').text('with milk?');
+				$('.right-option').text('without milk?');
 			}
 
 		} else {
@@ -132,7 +132,7 @@ function checkDrink(){
 				if (flavor) {
 					drink = 'Decaf Iced Latte';
 				} else{
-					drink = 'Iced Blueberry Tea';
+					drink = 'Testing2';
 				}
 			}
 		}
