@@ -1,12 +1,10 @@
-<div class="body">
-
+<div class="bodyProfile">
   <div class="main">
-
+    <div class="userInfo">
     <h1 class="username">{{name}}</h1>
-
+    </div>
       <div class="drinks-container">
-        <h2>Your Favorite Drinks</h2>
-
+        <h2 class="favDrinkTitle">Your Favorite Drinks</h2>
           <div class="favDrinksScroll">
             {{#each favoriteDrinks}}
               <h3>{{this.name}}</h3>
@@ -18,11 +16,7 @@
                   <li>{{this.image}}</li>
                 </ul>
             {{/each}}
-
           </div>
-
         </div>
-
       </div>
-
     </div>
