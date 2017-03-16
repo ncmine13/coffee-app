@@ -55,42 +55,69 @@ router.post('/register', function(req, res){
 });
 
 router.get('/login', function(req, res){
-  console.log(req.session)
+  console.log(req.session, ' this is from login')
   res.render('login', {});
   console.log('login works');
 });
 
+// router.post('/login', function(req, res){
+//   //first query the database to find the user
+//   User.findOne({username: req.body.username}, function(err, user){
+//     //if there is a user, then unhash their password
+//     if (user) {
+//       bcrypt.compare(req.body.password, user.password, function(err, match){
+//         //this function returns true or false
+//         console.log(match, ' this is match')
+//         if (match === true) {
+//           console.log(' is match passing')
+//           //set the session and direct to whereever
+//           req.session.username = user.username;
+//           req.session.userId = user.id
+//           req.session.isLoggedIn = true;
+//           console.log(req.session)
+//
+//           res.redirect('/user/profile')
+//         }
+//         else {
+//           //send them a message wrong username or password
+//           res.render('login', {message: 'username or password is wrong'})
+//           console.log('wrong username or password but in first if statement')
+//         }
+//       })
+//     }
+//     else {
+//       res.render('login', {message: 'username or password is wrong'})
+//       console.log('wrong username or password failed all if')
+//     }
+//   })
+// });
+
+
+
 router.post('/login', function(req, res){
-  //first query the database to find the user
+
+  var password = req.body.password;
   User.findOne({username: req.body.username}, function(err, user){
-    //if there is a user, then unhash their password
     if (user) {
-      bcrypt.compare(req.body.password, user.password, function(err, match){
-        //this function returns true or false
-        console.log(match, ' this is match')
-        if (match === true) {
-          console.log(' is match passing')
-          //set the session and direct to whereever
+
+      bcrypt.compare(password, user.password, function(err, match){
+        //this method returns true or false
+        //true , the passwords match..
+        //match will be true or false
+        if (match) {
           req.session.username = user.username;
           req.session.userId = user.id
-          req.session.isLoggedIn = true;
-          console.log(req.session)
-
+          req.session.isLoggedIn = true
           res.redirect('/user/profile')
         }
         else {
-          //send them a message wrong username or password
-          res.render('login', {message: 'username or password is wrong'})
-          console.log('wrong username or passwrod')
+          res.redirect('/user/register')
         }
-      })
+      });
     }
-    else {
-      res.render('login', {message: 'username or password is wrong'})
-      console.log('wrong username or password')
-    }
-  })
+  });
 });
+
 
 router.get('/profile', function(req, res){
   console.log(req.session, ' hey this is the seesssionnnnn in the profile route');
@@ -112,6 +139,7 @@ router.post('/profile', function(req, res){
 
 router.get('/logout', function(req, res){
   req.session.destroy(function(err){
+		console.log('this is running')
     res.redirect('/user/login')
   });
 });
