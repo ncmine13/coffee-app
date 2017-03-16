@@ -15,6 +15,12 @@ app.use(session({
 	cookie: {secure: false}
 }));
 
+
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'hbs');
+
+app.use(express.static(path.join(__dirname, 'public')));
+
 // var authenticateRoute = function(req, res, next){
 // 	if (req.originalUrl === '/user/login' || req.originalUrl === '/user/register') {
 // 		next();
@@ -38,14 +44,9 @@ var ChoiceController = require('./controllers/ChoiceController')
 
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
-
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/coffee', DrinkController);
 app.use('/user', UserController);
-app.use('/path', ChoiceController);
 
 server.listen(3000, function(){
 	console.log("server is listening on 3000");

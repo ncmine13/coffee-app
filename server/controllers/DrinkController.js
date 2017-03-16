@@ -61,4 +61,12 @@ router.delete('/coffeeDB/:id', function(req, res){
 	})
 })
 
+router.get('/library', function(req, res){
+	res.render('library');
+})
+
+router.get('/path', function(req, res){
+	res.render('question');
+})
+
 module.exports = router;
