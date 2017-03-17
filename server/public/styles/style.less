@@ -1,3 +1,5 @@
+@green: rgba(54, 219, 172, 1);
+
 html{
    background-size: 100%;
    margin: 0px;
@@ -17,18 +19,22 @@ body{
 }
 
 .header{
-	background: rgba(54, 219, 172, 1);
-    height: 60px;
-    width: 100%;
+	background: #36dbac;
+    height: 70px;
+    width: 99%;
     top: 0px;
     position: fixed;
+    right: 0.5%;
+    border-radius: 2px;
+    margin: 0;
+    padding: 0;
 
 
   ul{
     text-align: right;
     display: inline;
     float: right;
-    margin: 20px 10px 10px 10px;
+    margin: 20px 0px 10px 10px;
 
     li{
       padding: 5px 10px 5px 5px;
@@ -36,7 +42,7 @@ body{
       display: inline-block;
       margin: 0px 10px 5px 5px;
       font-family: 'Cabin', sans-serif;
-      font-size: 18px;
+      font-size: 24px;
       color: black;
       align-content: flex-end;
 
@@ -77,10 +83,18 @@ body{
     input{
       padding: 2px 80px 2px 2px;
       margin: 10px;
-        .form-button{
-          justify-content: flex-end;
-        }
+
     }
+}
+
+.form-button{
+	justify-content: flex-end;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 1px 1px 1px rgba(35, 30, 30, 0.8);
+    background-color: #bce0d6;
+    color: #16153b;
 }
 
 .form-login{
@@ -124,8 +138,8 @@ body{
 	font-size: 27px;
 	font-family: 'Raleway', sans-serif;
 	box-shadow: 2px 1px 5px rgba(35, 30, 30, 0.8);
-	background-color: #0E2447;
-	color: white;
+	background-color: #bce0d6;
+	color: #16153b;
 }
 
 .buttons:hover {
@@ -150,27 +164,29 @@ body{
 }
 
 .left-option {
-  margin-left: 250px;
+  margin-left: 300px;
 }
 
 .right-option {
-  margin: 5px;
   float: right;
-  margin-right: 250px;
+  margin-right: 300px;
 }
+
 .h1Holder{
   height: 100px;
 }
 
 .do-you-want {
 	font-family: 'Raleway', sans-serif;
-	font-weight: lighter;
-	font-size: 55px;
-	color: white;
-	text-shadow: 0px 1px 0px #443f3f;
-  align-items: center;
-  margin-left: 350px;
-  margin-top: 150px;
+    font-weight: lighter;
+    font-size: 55px;
+    color: white;
+    text-shadow: 0px 1px 0px #443f3f;
+    align-items: center;
+    margin-left: 39%;
+    margin-top: 150px;
+    width: 100%;
+    letter-spacing: 1.5px;
 
 }
 .mainquestion{
@@ -179,39 +195,46 @@ body{
 }
 
 img.logo{
-  width: 4em;
-  margin: 0px 0px 0px 10px;
-  display: inline;
+	width: 5em;
+	margin: -3px 0px 0px 10px;
+	display: inline;
 }
 .recommendDrink{
-  padding: 30px 10px;
-	width: 300px;
-	border: none;
-	border-radius: 4px;
-	font-size: 27px;
-	font-family: 'Raleway', sans-serif;
-	box-shadow: 2px 1px 5px rgba(35, 30, 30, 0.8);
-	background-color:deepskyblue;         //#0E2447;
-	color: white;
-  margin: 100px 0px 40px 0px;
+	padding: 20px 10px;
+    width: 220px;
+    border: none;
+    border-radius: 4px;
+    font-size: 24px;
+    font-family: 'Cabin', sans-serif;
+	font-weight: bold;
+    color: white;
+    margin: 150px 12px 0px 22px;
+    background-color: #bce0d6;
+    color: #15921a;
+	text-shadow: 0px 0px 0px #443f3f;
 }
+
 .recommendDrink:hover{
   transform: scale(1.025);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   transition: all .2s;
 }
+
 .drinkLibrary{
-  padding: 30px 10px;
-  width: 300px;
-  border: none;
-  border-radius: 4px;
-  font-size: 27px;
-  font-family: 'Raleway', sans-serif;
-  box-shadow: 2px 1px 5px rgba(35, 30, 30, 0.8);
-  background-color: deepskyblue;         //#0E2447;
-  color: white;
-  margin: 100px 0px 40px 0px;
+	padding: 20px 10px;
+    width: 220px;
+    border: none;
+    border-radius: 4px;
+    font-size: 24px;
+    font-family: 'Cabin', sans-serif;
+	font-weight: bold;
+    color: white;
+    margin: 40px 12px 40px 22px;
+    background-color: #bce0d6;
+    color: #15921a;
+	text-shadow: 0px 0px 0px #443f3f;
 }
+
 .drinkLibrary:hover{
   transform: scale(1.025);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
@@ -229,19 +252,21 @@ img.logo{
 }
 
 .attrH{
-  margin-top: 6px;
-  color: white;
-  text-shadow: 0px 1px 0px #443f3f;
+	margin: 17px;
+    font-size: 30px;
+    text-shadow: 0px 1px 0px #443f3f;
 }
 
 .buttonsP{
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  width: 25%;
-  float: right;
-  margin: 10px;
-  height: 500px;
+	margin-top: 6px;
+    color: white;
+    text-shadow: 0px 1px 0px #443f3f;
+    margin-bottom: 10px;
+    margin-left: 19px;
+    letter-spacing: 1.5px;
+    font-family: 'Raleway', sans-serif;
 }
+
 .drinks-container{
   width: 45%;
   margin: 0px 10px 10px 10px;
@@ -281,6 +306,7 @@ img.logo{
 ul.rig {
 	list-style: none;
 	font-size: 0px;
+	padding: 20px;
 }
 
 ul.rig li {
@@ -310,9 +336,11 @@ ul.rig li h3 {
 }
 
 .thumbnail {
+	margin: 0px 0px 10px 20px;
 	height: 150px;
 	border-radius: 4px;
 	margin-left: 20px;
+	margin-top: 0px;
 }
 
 .internalList {
@@ -321,27 +349,38 @@ ul.rig li h3 {
 	font-family: 'Raleway', sans-serif;
 }
 
-.drinkSpecs {
-  background: rgba(54, 219, 172, .5);
-	height: 500px;
-	width: 70%;
-  margin: auto;
-	margin-top: 100px;
+
+.drinkHeader {
+	background: rgba(54, 219, 172, 0.4);
+    height: 475px;
+    width: 42%;
+    margin-top: 100px;
+    margin-left: 27%;
+	border-radius: 2px;
 }
 
 .drinkHeader {
-	 text-align: center;
-	 color: white;
-   font-weight: lighter;
-   margin-top: 100px;
+	text-align: center;
+	color: white;
+	font-weight: lighter;
+	margin-top: 100px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+div.drinkHeader h1 {
+	margin-top: 20px;
 }
 
 .drinkName {
 	font-size: 45px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -10px;
+    color: white;
+    letter-spacing: 1px;
+	font-family: 'Raleway', sans-serif;
 }
 
 .drinkDescriptions {
@@ -350,7 +389,7 @@ ul.rig li h3 {
   padding: 5px;
   display: block;
   position: fixed;
-  width: 66%;
+  width: 90%;
 }
 
 .drinkList {
@@ -359,21 +398,83 @@ ul.rig li h3 {
 	font-family: 'Cabin', sans-serif;
 	line-height: 1.5em;
 	text-align: center;
+  	width: 38%;
 }
+
+.drinkList {
+	list-style: none;
+	    color: white;
+	    line-height: 1.8em;
+	    text-align: center;
+	    font-size: 14px;
+	    font-family: 'Raleway', sans-serif;
+	    margin-top: 8px;
+	    letter-spacing: 0.75px;
+	    font-weight: bold;
+}
+
 .drinkBody{
   display: block;
   margin: auto;
 }
+
 .image {
-	  border-radius: 5px;
+	border-radius: 5px;
     box-shadow: 1px 1px 5px rgba(35, 30, 30, 0.4);
     height: 200px;
     text-align: center;
     margin: auto;
+	margin-top: -20px;
     display: block;
 }
+
+.internalList {
+	font-size: 12px;font-family: 'Raleway', sans-serif;
+}
+
 .recc{
   margin: 10px;
+}
+
+#pro-list {
+	max-width: 320px;
+    line-height: 32px;
+    clear: both;
+    float: left;
+	margin-left: -20px;
+}
+
+#listID {
+	margin-bottom: 10px;
+}
+
+#ourRec {
+	text-align: center;
+	color: white;
+	padding-top: 15px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.col-Left {
+	width: 23%;
+    margin-left: 2%;
+	max-height: 413px;
+}
+
+.col-Right {
+	width: 49%;
+	border-radius: 4px;
+	float: right;
+	margin: 10px;
+	height: 500px;
+}
+
+.col-Mid {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	width: 23%;
+	float: left;
+	display: inline-block;
 }
 
 // font-family: 'Raleway', sans-serif;

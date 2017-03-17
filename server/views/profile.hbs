@@ -1,62 +1,35 @@
 <div class="bodyP">
-<<<<<<< HEAD
 
-
-	<div class="userInfo">
+	<div class="userInfo col-Left">
 		<h1 class="username">{{name}}</h1>
 		<img src="" alt="">
 	</div>
-	<div class="drinks-container">
-		<h2 class="favDrinkTitle">{{name}}'s Picks</h2>
-		<div class="favDrinksScroll">
-			{{#each favoriteDrinks}}
-			<ul class="lists">
-				<h3 class="attrH">{{this.name}}</h3>
-				<div class="list-container">
-					<img class="thumbnail" src="{{image}}">
-				</div>
-				<div class="list-container">
-					<ul class="internalList" id="pro-list">
-						<li class="attr">{{this.type}}</li>
-						<li class="attr">{{this.cravingSatisfied}}</li>
-						<li class="attr">{{this.calories}}</li>
-						<li class="attr">{{this.ingredients}}</li>
-					</ul>
-					<div>
+
+	<div class="col-Mid">
+		<a href="/coffee/path"><button type="button" name="Recommend Drink" class="recommendDrink">Need help choosing a drink?</button></a>
+		<a href="/coffee/library"><button type="button" name="Drink Library" class="drinkLibrary">Check the all the drinks</button></a>
+	</div>
+
+	<div class="drinks-container col-Right ">
+				<h2 class="favDrinkTitle">{{name}}'s Picks</h2>
+				<div class="favDrinksScroll">
+					{{#each favoriteDrinks}}
+					<ul class="lists">
+						<h3 class="attrH">{{this.name}}</h3>
+						<div class="list-container">
+							<img class="thumbnail" src="{{image}}">
+						</div>
+						<div class="list-container" id="listID">
+							<ul class="internalList" id="pro-list">
+								<li class="attr">{{this.type}}</li>
+								<li class="attr">{{this.cravingSatisfied}}</li>
+								<li class="attr">{{this.calories}}</li>
+								<li class="attr">{{this.ingredients}}</li>
+							</ul>
+						</div>
 					</ul>
 					{{/each}}
 				</div>
-			</div>
-			<div class="buttonsP">
-				<a href="/coffee/path"><button type="button" name="Recommend Drink" class="recommendDrink">Need help choosing a drink?</button></a>
-				<a href="/coffee/library"><button type="button" name="Drink Library" class="drinkLibrary">Check the all the drinks</button></a>
-			</div>
-		</div>
-=======
-    <div class="userInfo">
-    <h1 class="username">{{name}}</h1>
-    <img src="" alt="">
-    </div>
-      <div class="drinks-container">
-        <h2 class="favDrinkTitle">Your Favorite Drinks</h2>
-          <div class="favDrinksScroll">
-            {{#each favoriteDrinks}}
-            <ul class="lists">
-              <h3 class="attrH">{{this.name}}</h3>
-                <ul>
-                  <li class="attr">{{this.type}}</li>
-                  <li class="attr">{{this.cravingSatisfied}}</li>
-                  <li class="attr">{{this.calories}}</li>
-                  <li class="attr">{{this.ingredients}}</li>
-                  <li class="attr">{{this.image}}</li>
-                </ul>
-                </ul>
-            {{/each}}
-          </div>
-        </div>
-        <div class="buttonsP">
-          <a href="/coffee/path"><button type="button" name="Recommend Drink" class="recommendDrink">Need help choosing a drink?</button></a>
-          <a href="/coffee/library"><button type="button" name="Drink Library" class="drinkLibrary">Check the all the drinks</button></a>
-        </div>
-        </div>
->>>>>>> 4c51efb076249b00e4b9cce2cb0da655e2484927
+	</div>
+
+</div>
