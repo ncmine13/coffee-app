@@ -4,6 +4,17 @@ var caffeine = " "
 var hot = " "
 var flavor = " "
 
+$.ajax({
+	url: '/coffee/coffeeDB',
+	type: 'get',
+	success: function(data){
+		console.log(data)
+	},
+	error: function(err){
+		console.log(err)
+	}
+})
+
 $('.left-option').on('click', function(e){
 
 		if($(this).text() === 'sweet?'){
@@ -50,7 +61,7 @@ $('.right-option').on('click', function(e){
 			$('.left-option').text('hot?');
 			$('.right-option').text('cold?');
 
-		} else if($(this).text() === 'hot?'){
+		} else if($(this).text() === 'cold?'){
 			hot = false;
 			if (sweet) {
 				$('.left-option').text('with chocolate?');
@@ -111,7 +122,7 @@ function checkDrink(){
 				if (flavor) {
 					drink = 'Latte';
 				}else{
-					drink = 'Coffee';
+					drink = 'Drip Coffee';
 				}
 
 			} else {
@@ -126,13 +137,13 @@ function checkDrink(){
 				if (flavor) {
 					drink = 'Steamer';
 				} else {
-					drink = 'Chamomile tea';
+					drink = 'Chamomile Tea';
 				}
 			} else {
 				if (flavor) {
 					drink = 'Decaf Iced Latte';
 				} else{
-					drink = 'Blueberry Iced Tea';
+					drink = 'Iced Blueberry Tea';
 				}
 			}
 		}

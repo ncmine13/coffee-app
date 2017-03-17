@@ -34,8 +34,8 @@ var authenticateRoute = function(req, res, next){
 			}
 		}
 	}
-//set before the controllers so it intercepts and checks before controllers start to take over (AKA middleware)
-app.use(authenticateRoute);
+// set before the controllers so it intercepts and checks before controllers start to take over (AKA middleware)
+// app.use(authenticateRoute);
 // var authenticateRoute = function(req, res, next){
 // 	if (req.originalUrl === '/user/login' || req.originalUrl === '/user/register') {
 // 		next();
@@ -50,8 +50,8 @@ app.use(authenticateRoute);
 // 			}
 // 		}
 // 	}
-// //set before the controllers so it intercepts and checks before controllers start to take over (AKA middleware)
-// app.use(authenticateRoute);
+//set before the controllers so it intercepts and checks before controllers start to take over (AKA middleware)
+app.use(authenticateRoute);
 
 var UserController = require('./controllers/UserController');
 var DrinkController = require('./controllers/DrinkController');
