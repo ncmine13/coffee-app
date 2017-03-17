@@ -16,16 +16,9 @@ body {
 .header {
   background: #36dbac;
   height: 60px;
-<<<<<<< HEAD
   width: 100%;
   top: 0px;
   position: fixed;
-=======
-  width: auto;
-  position: fixed;
-  width: 100%;
-  top: 0px;
->>>>>>> thursdaystyles
 }
 .header ul {
   text-align: right;
@@ -97,51 +90,6 @@ body {
 .error p {
   text-align: center;
   font-family: 'Cabin', sans-serif;
-}
-.drinkSpecs {
-  background-color: rgba(54, 219, 172, 0.75);
-  display: block;
-  width: 100%;
-  height: 450px;
-  float: right;
-  margin: 0px;
-  margin-top: 95px;
-}
-.drinkHeader {
-  text-align: center;
-  color: white;
-  font-weight: lighter;
-}
-.drinkName {
-  font-size: 45px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-top: -2%;
-}
-.drinkDescriptions {
-  margin-top: 0;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  bottom: 8%;
-  left: 30%;
-}
-.drinkList {
-  list-style: none;
-  color: white;
-  font-family: 'Cabin', sans-serif;
-  line-height: 1.5em;
-  text-align: center;
-}
-.image {
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px rgba(35, 30, 30, 0.4);
-  height: 200px;
-  margin-top: 0;
-  margin-left: 41%;
-  position: fixed;
-  bottom: 30%;
 }
 .main {
   background-color: rgba(54, 219, 172, 0.75);
@@ -219,7 +167,7 @@ img.logo {
   font-size: 27px;
   font-family: 'Raleway', sans-serif;
   box-shadow: 2px 1px 5px rgba(35, 30, 30, 0.8);
-  background-color: #0E2447;
+  background-color: deepskyblue;
   color: white;
   margin: 100px 0px 40px 0px;
 }
@@ -236,7 +184,7 @@ img.logo {
   font-size: 27px;
   font-family: 'Raleway', sans-serif;
   box-shadow: 2px 1px 5px rgba(35, 30, 30, 0.8);
-  background-color: #0E2447;
+  background-color: deepskyblue;
   color: white;
   margin: 100px 0px 40px 0px;
 }
@@ -246,7 +194,7 @@ img.logo {
   transition: all .2s;
 }
 .lists {
-  margin: 5px 10px 10px 10px;
+  margin: 0px 10px 5px 10px;
   padding: 5px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   color: white;
@@ -271,7 +219,7 @@ img.logo {
   width: 45%;
   margin: 0px 10px 10px 10px;
   float: left;
-  height: 300px;
+  height: 530px;
   margin: 10px;
 }
 .userInfo {
@@ -281,14 +229,15 @@ img.logo {
   text-align: center;
   float: left;
   height: 450px;
-  margin: 90px 10px 10px 10px;
+  margin: 85px 10px 10px 10px;
   border-radius: 3px;
 }
 .favDrinksScroll {
   overflow-y: auto;
-  max-height: 70vh;
+  max-height: 71vh;
   margin: 0px;
-  padding: 5px;
+  padding: 0px;
+  margin-top: 5px;
 }
 .favDrinkTitle {
   font-size: 35px;
@@ -323,4 +272,54 @@ ul.rig li h3 {
   border-radius: 4px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 2px 1px 5px rgba(35, 30, 30, 0.8);
+}
+.drinkSpecs {
+  background: rgba(54, 219, 172, 0.5);
+  height: 500px;
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+}
+.drinkHeader {
+  text-align: center;
+  color: white;
+  font-weight: lighter;
+  margin-top: 100px;
+}
+.drinkName {
+  font-size: 45px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5px;
+}
+.drinkDescriptions {
+  margin: auto;
+  margin-top: 10px;
+  padding: 5px;
+  display: block;
+  position: fixed;
+  width: 66%;
+}
+.drinkList {
+  list-style: none;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+  line-height: 1.5em;
+  text-align: center;
+}
+.drinkBody {
+  display: block;
+  margin: auto;
+}
+.image {
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(35, 30, 30, 0.4);
+  height: 200px;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+.recc {
+  margin: 10px;
 }
