@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require('express');
 var app = express();
 var server = require('http').createServer(app);
@@ -5,6 +6,7 @@ var bodyParser = require('body-parser');
 var path = require('path');
 var mongoose = require('mongoose');
 var session = require('express-session');
+
 
 require('./db/db');
 
