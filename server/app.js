@@ -4,6 +4,7 @@ var server = require('http').createServer(app);
 var bodyParser = require('body-parser');
 var path = require('path');
 var mongoose = require('mongoose');
+var dotenv = require('dotenv').config()
 var session = require('express-session');
 
 require('./db/db');
