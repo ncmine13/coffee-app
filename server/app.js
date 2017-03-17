@@ -63,6 +63,4 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use('/coffee', DrinkController);
 app.use('/user', UserController);
 
-server.listen(3000, function(){
-	console.log("server is listening on 3000");
-});
+server.listen(process.env.PORT || 3000);
