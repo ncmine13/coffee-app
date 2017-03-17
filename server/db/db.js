@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var connectionString = 'mongodb://localhost/coffee-app';
+var connectionString = process.env.DB_HOST;
 
 mongoose.connect(connectionString);
 
