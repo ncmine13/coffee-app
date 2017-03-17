@@ -108,8 +108,8 @@ body {
   font-size: 27px;
   font-family: 'Raleway', sans-serif;
   box-shadow: 2px 1px 5px rgba(35, 30, 30, 0.8);
-  background-color: #0E2447;
-  color: white;
+  background-color: #bce0d6;
+  color: #16153b;
 }
 .buttons:hover {
   transform: scale(1.025);
@@ -130,12 +130,11 @@ body {
   width: 100%;
 }
 .left-option {
-  margin-left: 250px;
+  margin-left: 300px;
 }
 .right-option {
-  margin: 5px;
   float: right;
-  margin-right: 250px;
+  margin-right: 300px;
 }
 .h1Holder {
   height: 100px;
@@ -147,8 +146,10 @@ body {
   color: white;
   text-shadow: 0px 1px 0px #443f3f;
   align-items: center;
-  margin-left: 350px;
+  margin-left: 39%;
   margin-top: 150px;
+  width: 100%;
+  letter-spacing: 1.5px;
 }
 .mainquestion {
   position: fixed;
