@@ -50,7 +50,7 @@ $('.right-option').on('click', function(e){
 			$('.left-option').text('hot?');
 			$('.right-option').text('cold?');
 
-		} else if($(this).text() === 'hot?'){
+		} else if($(this).text() === 'cold?'){
 			hot = false;
 			if (sweet) {
 				$('.left-option').text('with chocolate?');
@@ -111,7 +111,7 @@ function checkDrink(){
 				if (flavor) {
 					drink = 'Latte';
 				}else{
-					drink = 'Coffee';
+					drink = 'Drip Coffee';
 				}
 
 			} else {
