@@ -1,15 +1,15 @@
 
 <div class="form-container">
-  <form class="form-login" action="/user/login" method="post">
-    <h1 id="log-title">Login Page</h1>
+  <form class="form-registerorlogin" action="/user/login" method="post">
+    <h1 class="regorlog-title">Sign in to your account.</h1>
     <br>
     <input type="text" name="username" value="" placeholder="username">
     <br>
     <input type="password" name="password" value="" placeholder="password">
     <br>
-    <input class="form-button" type="submit" name="" value="Log in!">
+    <input id="login-button" type="submit" name="" value="Log in!">
   </form>
 </div>
 <div class="error">
- <p>{{message}}</p>
+	<p>{{message}}</p>
 </div>
