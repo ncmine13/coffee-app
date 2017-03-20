@@ -162,11 +162,13 @@ body{
 }
 
 .username{
-  font-size: 45px;
-  text-align: left;
-  margin: 10px;
-  color: white;
-  padding-left: 33px;
+	font-size: 35px;
+    font-weight: lighter;
+    text-align: left;
+    margin: 16px;
+    color: @white;
+	margin-bottom: 8px;
+	margin-left: 4%;
 }
 
 .buttonDiv {
@@ -213,60 +215,47 @@ img.logo{
 	margin: -3px 0px 0px 10px;
 	display: inline;
 }
-.recommendDrink{
-	padding: 20px 10px;
-    width: 220px;
+.drinkButton{
+	display: block;
+    padding: 17px 30px;
+    width: 230px;
     border: none;
     border-radius: 4px;
-    font-size: 24px;
-    font-family: 'Cabin', sans-serif;
-	font-weight: bold;
-    color: white;
-    margin: 150px 12px 0px 22px;
-    background-color: #bce0d6;
-    color: #15921a;
-	text-shadow: 0px 0px 0px #443f3f;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 25px 12px 0px 40px;
+    background-color: @white;
+    color: #0c1828;
+    text-shadow: 0px 0px 0px #443f3f;
 }
 
-.recommendDrink:hover{
+a {
+	text-decoration: none;
+}
+
+.drinkButton:hover{
   transform: scale(1.025);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   transition: all .2s;
 }
 
-.drinkLibrary{
-	padding: 20px 10px;
-    width: 220px;
-    border: none;
-    border-radius: 4px;
-    font-size: 24px;
-    font-family: 'Cabin', sans-serif;
-	font-weight: bold;
-    color: white;
-    margin: 40px 12px 40px 22px;
-    background-color: #bce0d6;
-    color: #15921a;
-	text-shadow: 0px 0px 0px #443f3f;
-}
-
-.drinkLibrary:hover{
-  transform: scale(1.025);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
-  transition: all .2s;
-}
 
 .lists{
-  margin: 0px 10px 5px 10px;
-  padding: 5px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
-  color: white;
-  background: rgba(54, 219, 172, .5);
-  text-shadow: 0px 1px 0px #443f3f;
-  border-radius: 3px;
+	margin: 0px 110px 5px 110px;
+    padding: 5px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+    color: @white;
+    background: rgba(54, 219, 172, 0.5);
+    border-radius: 3px;
+    text-align: center;
 }
 
 .attrH{
 	margin: 17px;
+	text-align: left;
+	margin-left: 30px;
     font-size: 30px;
     text-shadow: 0px 1px 0px #443f3f;
 }
@@ -282,22 +271,30 @@ img.logo{
 }
 
 .drinks-container{
-  width: 45%;
-  margin: 0px 10px 10px 10px;
-  float: left;
-  height: 530px;
-  margin: 10px;
+	width: 65%;
+    background: rgba(54, 219, 172, 0.4);
+    float: left;
+    height: 530px;
+    margin: 10px;
+    margin-left: 18%;
+    border-radius: 3px;
 }
+
+
 .userInfo{
-  display: inline;
-  background: rgba(54, 219, 172, .5);
-  width: 25%;
-  text-align: center;
-  float: left;
-  height: 450px;
-  margin: 85px 10px 10px 10px;
-  border-radius: 3px;
+	display: inline;
+    background: rgba(54, 219, 172, 0.4);
+	font-family: 'Raleway', sans-serif;
+    text-align: center;
+    float: left;
+    height: 450px;
+    margin: 30px 10px 10px 10px;
+    border-radius: 3px;
+    width: 65%;
+    margin-left: 18%;
+    max-height: 250px;
 }
+
 
 .favDrinksScroll{
   overflow-y: auto;
@@ -309,9 +306,11 @@ img.logo{
 .favDrinkTitle{
   font-size: 35px;
   margin: 15px;
-  color: white;
+  color: @white;
   text-shadow: 0px 1px 0px #443f3f;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
 }
 .bodyP{
   margin-top: 75px;
@@ -361,6 +360,7 @@ ul.rig li h3 {
 	list-style: none;
 	font-size: 13px;
 	font-family: 'Raleway', sans-serif;
+	text-align: left;
 }
 
 
@@ -469,39 +469,46 @@ div.drinkHeader h1 {
 	font-family: 'Raleway', sans-serif;
 }
 
-.col-Left {
-	width: 23%;
-    margin-left: 2%;
-	max-height: 413px;
-}
+// .col-Right {
+// 	width: 49%;
+// 	border-radius: 4px;
+// 	float: right;
+// 	margin: 10px;
+// 	height: 500px;
+// }
 
-.col-Right {
-	width: 49%;
-	border-radius: 4px;
-	float: right;
-	margin: 10px;
-	height: 500px;
-}
 
-.col-Mid {
-	text-align: center;
-	font-family: 'Raleway', sans-serif;
-	width: 23%;
+.infobox {
 	float: left;
-	display: inline-block;
+	max-width: 49%;
+	margin-left: 5%;
 }
+
 .mark img{
-	height: 209px;
+	height: 145px;
     border-radius: 4px;
     border: 2px solid black;
+    float: left;
+    margin-left: 5%;
+    margin-top: 2%;
 }
 
 .markStuff {
-	color: white;
-text-align: left;
-padding-left: 44px;
-padding-right: 10px;
+	color: #F9F9E5;
+    font-size: 15px;
+    max-width: 50%;
+    margin-left: 182px;
+    text-align: left;
+    line-height: 32px;
 }
+
+.theButtons {
+	float: right;
+	margin-top: -60px;
+	margin-right: 50px;
+}
+
+
 
 
 // font-family: 'Raleway', sans-serif;

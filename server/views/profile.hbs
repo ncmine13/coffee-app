@@ -1,19 +1,22 @@
 <div class="bodyP">
 
-	<div class="userInfo col-Left">
-		<h1 class="username">{{name}}</h1>
-	<div class="mark">
-		<img src="/images/mark.jpg" alt="">
-	</div>
-		<p class="markStuff">I love coffee! It's the best. It makes me wake up sometimes! I love this app because i love coffee!</p>
+	<div class="userInfo">
+		<h1 class="username">Welcome home, {{name}}.</h1>
+		<div class="infobox">
+			<div class="mark">
+				<img src="/images/Headshot copy.jpg" alt="">
+			</div>
+			<div class="markStuff">
+				<p >I love coffee! It's the best. It makes me wake up sometimes! I love this app because i love coffee!</p>
+			</div>
+		</div>
+		<div class = "theButtons">
+			<a href="/coffee/path"><button type="button" name="Recommend Drink" class="drinkButton">I need help choosing a drink!</button></a>
+			<a href="/coffee/library"><button type="button" name="Drink Library" class="drinkButton">Let me see all of my options!</button></a>
+		</div>
 	</div>
 
-	<div class="col-Mid">
-		<a href="/coffee/path"><button type="button" name="Recommend Drink" class="recommendDrink">Need help choosing a drink?</button></a>
-		<a href="/coffee/library"><button type="button" name="Drink Library" class="drinkLibrary">Check out all of our drinks!</button></a>
-	</div>
-
-	<div class="drinks-container col-Right ">
+	<div class="drinks-container">
 				<h2 class="favDrinkTitle">{{name}}'s Picks</h2>
 				<div class="favDrinksScroll">
 					{{#each favoriteDrinks}}
