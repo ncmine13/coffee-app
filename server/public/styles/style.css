@@ -56,20 +56,16 @@ body {
 .form-container {
   display: flex;
   justify-content: center;
-  background: rgba(54, 219, 172, 0.6);
-  margin-left: 450px;
-  margin-right: 450px;
   margin-top: 200px;
-  border-radius: 20px;
-  border: 1px solid black;
 }
 .form-register {
   margin: 10px;
   justify-content: center;
 }
 .form-register input {
-  padding: 2px 80px 2px 2px;
+  padding: 15px 50px;
   margin: 10px;
+  font-size: 20px;
 }
 .form-button {
   justify-content: flex-end;
@@ -82,10 +78,20 @@ body {
 }
 .form-login {
   margin: 10px;
+  background: rgba(54, 219, 172, 0.4);
+  border-radius: 2px;
+  padding: 10px;
+}
+.form-login h1 {
+  color: #eeeef1;
 }
 .form-login input {
-  padding: 2px 80px 2px 2px;
-  margin: 10px;
+  padding: 13px 45px;
+  margin: 5px 10px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
 }
 .main {
   margin: 10px;
@@ -232,7 +238,7 @@ img.logo {
   font-family: 'Raleway', sans-serif;
 }
 .drinks-container {
-  width: 45%;
+  width: 58%;
   margin: 0px 10px 10px 10px;
   float: left;
   height: 530px;
@@ -446,4 +452,7 @@ footer {
   font-weight: bold;
   text-shadow: 0.5px 2px 0 rgba(0, 0, 0, 0.2);
   letter-spacing: 2px;
+}
+.regLog {
+  margin: 20px;
 }
