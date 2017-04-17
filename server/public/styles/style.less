@@ -1,123 +1,126 @@
 @green: rgba(54, 219, 172, 1);
 
+@lightGray: #eeeef1;
+@brown: #6A2B15;
+@beige: #B59A7C;
+@darkBrown: #260B02;
+
 html{
-   background-size: 100%;
-   margin: 0px;
+	background-size: 100%;
+	margin: 0px;
 
 }
 
 body{
-  margin: 0px;
-  background-color: rgba(255,255,255,.8);
-  font-family: 'Cabin', sans-serif;
-  height: 450px;
-  background-image: url('/images/homepic.jpg');
-  background-size: 100%;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+	margin: 0px;
+	background-color: rgba(255,255,255,.8);
+	height: 450px;
+	background-image: url('/images/homepic.jpg');
+	background-size: 100%;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .header{
-	background: #36dbac;
-    height: 70px;
-    width: 99%;
-    top: 0px;
-    position: fixed;
-    right: 0.5%;
-    border-radius: 2px;
-    margin: 0;
-    padding: 0;
+	background: @lightGray;
+	height: 70px;
+	width: 100%;
+	top: 0px;
+	position: fixed;
+	margin: 0;
+	padding: 0;
 
 
-  ul{
-    text-align: right;
-    display: inline;
-    float: right;
-    margin: 20px 0px 10px 10px;
+	ul{
+		text-align: right;
+		display: inline;
+		float: right;
+		margin: 20px 0px 10px 10px;
 
-    li{
-      padding: 5px 10px 5px 5px;
-      text-decoration: none;
-      display: inline-block;
-      margin: 0px 10px 5px 5px;
-      font-family: 'Cabin', sans-serif;
-      font-size: 24px;
-      color: black;
-      align-content: flex-end;
+		li{
+			padding: 6px 13px 5px 12px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 0px 10px 5px 5px;
+			font-size: 20px;
+			color: @darkBrown;
+			align-content: flex-end;
+			font-family: 'Vollkorn', serif;
+			letter-spacing: 1.5px;
 
-      }
-      li:hover{
-        color: white;
-      }
-    }
+		}
+		li:hover{
+			color: white;
+		}
+	}
 }
 
 #reg-title{
-  text-align: center;
-  margin: 10px 10px 5px 10px;
-  font-family: 'Cabin', sans-serif;
-  font-size: 40px;
+	text-align: center;
+	margin: 10px 10px 5px 10px;
+	font-family: 'Cabin', sans-serif;
+	font-size: 40px;
 }
 #log-title{
-  text-align: center;
-  margin: 10px 10px 5px 10px;
-  font-family: 'Cabin', sans-serif;
-  font-size: 40px;
+	text-align: center;
+	margin: 10px 10px 5px 10px;
+	font-family: 'Cabin', sans-serif;
+	font-size: 40px;
 }
 .form-container{
-  display: flex;
-  justify-content: center;
-  background: rgba(54, 219, 172, .6);
-  margin-left: 450px;
-  margin-right: 450px;
-  margin-top: 200px;
-  border-radius: 20px;
-  border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	background: rgba(54, 219, 172, .6);
+	margin-left: 450px;
+	margin-right: 450px;
+	margin-top: 200px;
+	border-radius: 20px;
+	border: 1px solid black;
 }
 
 .form-register{
-  margin: 10px;
-  justify-content: center;
+	margin: 10px;
+	justify-content: center;
 
-    input{
-      padding: 2px 80px 2px 2px;
-      margin: 10px;
+	input{
+		padding: 2px 80px 2px 2px;
+		margin: 10px;
 
-    }
+	}
 }
 
 .form-button{
 	justify-content: flex-end;
-    border: none;
-    border-radius: 2px;
-    font-family: 'Raleway', sans-serif;
-    box-shadow: 1px 1px 1px rgba(35, 30, 30, 0.8);
-    background-color: #bce0d6;
-    color: #16153b;
+	border: none;
+	border-radius: 2px;
+	font-family: 'Raleway', sans-serif;
+	box-shadow: 1px 1px 1px rgba(35, 30, 30, 0.8);
+	background-color: #bce0d6;
+	color: #16153b;
 }
 
 .form-login{
-  margin: 10px;
+	margin: 10px;
 
-  input{
-    padding: 2px 80px 2px 2px;
-    margin: 10px;
-  }
+	input{
+		padding: 2px 80px 2px 2px;
+		margin: 10px;
+	}
 }
 
 .main{
-  margin: 10px;
-  display: inline;
+	margin: 10px;
+	display: inline;
 }
 
 .error{
-  display: flex;
-  justify-content: center;
-    p{
-      text-align: center;
-      font-family: 'Cabin', sans-serif;
-    }
+	display: flex;
+	justify-content: center;
+	p{
+		text-align: center;
+		font-family: 'Cabin', sans-serif;
+	}
 }
 
 .main {
@@ -149,50 +152,50 @@ body{
 }
 
 .username{
-  font-size: 45px;
-  text-align: left;
-  margin: 10px;
-  color: white;
-  padding-left: 33px;
+	font-size: 45px;
+	text-align: left;
+	margin: 10px;
+	color: white;
+	padding-left: 33px;
 }
 
 .buttonDiv {
 	padding: 5px;
 	position: fixed;
 	bottom: 180px;
-  display: inline;
-  width: 100%;
+	display: inline;
+	width: 100%;
 }
 
 .left-option {
-  margin-left: 300px;
+	margin-left: 300px;
 }
 
 .right-option {
-  float: right;
-  margin-right: 300px;
+	float: right;
+	margin-right: 300px;
 }
 
 .h1Holder{
-  height: 100px;
+	height: 100px;
 }
 
 .do-you-want {
 	font-family: 'Raleway', sans-serif;
-    font-weight: lighter;
-    font-size: 55px;
-    color: white;
-    text-shadow: 0px 1px 0px #443f3f;
-    align-items: center;
-    margin-left: 39%;
-    margin-top: 150px;
-    width: 100%;
-    letter-spacing: 1.5px;
+	font-weight: lighter;
+	font-size: 55px;
+	color: white;
+	text-shadow: 0px 1px 0px #443f3f;
+	align-items: center;
+	margin-left: 39%;
+	margin-top: 150px;
+	width: 100%;
+	letter-spacing: 1.5px;
 
 }
 .mainquestion{
-  position: fixed;
-  display: flex;
+	position: fixed;
+	display: flex;
 }
 
 img.logo{
@@ -202,106 +205,108 @@ img.logo{
 }
 .recommendDrink{
 	padding: 20px 10px;
-    width: 220px;
-    border: none;
-    border-radius: 4px;
-    font-size: 24px;
-    font-family: 'Cabin', sans-serif;
+	width: 220px;
+	border: none;
+	border-radius: 4px;
+	font-size: 24px;
+	font-family: 'Cabin', sans-serif;
 	font-weight: bold;
-    color: white;
-    margin: 150px 12px 0px 22px;
-    background-color: #bce0d6;
-    color: #15921a;
+	color: white;
+	margin: 150px 12px 0px 22px;
+	background-color: #bce0d6;
+	color: #15921a;
 	text-shadow: 0px 0px 0px #443f3f;
 }
 
 .recommendDrink:hover{
-  transform: scale(1.025);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
-  transition: all .2s;
+	transform: scale(1.025);
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+	transition: all .2s;
 }
 
 .drinkLibrary{
 	padding: 20px 10px;
-    width: 220px;
-    border: none;
-    border-radius: 4px;
-    font-size: 24px;
-    font-family: 'Cabin', sans-serif;
+	width: 220px;
+	border: none;
+	border-radius: 4px;
+	font-size: 24px;
+	font-family: 'Cabin', sans-serif;
 	font-weight: bold;
-    color: white;
-    margin: 40px 12px 40px 22px;
-    background-color: #bce0d6;
-    color: #15921a;
+	color: white;
+	margin: 40px 12px 40px 22px;
+	background-color: #bce0d6;
+	color: #15921a;
 	text-shadow: 0px 0px 0px #443f3f;
 }
 
 .drinkLibrary:hover{
-  transform: scale(1.025);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
-  transition: all .2s;
+	transform: scale(1.025);
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+	transition: all .2s;
 }
 
 .lists{
-  margin: 0px 10px 5px 10px;
-  padding: 5px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
-  color: white;
-  background: rgba(54, 219, 172, .5);
-  text-shadow: 0px 1px 0px #443f3f;
-  border-radius: 3px;
+	margin: 0px 10px 12px 10px;
+	padding: 5px;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+	color: white;
+	text-shadow: 0px 1px 0px #443f3f;
+	border-radius: 3px;
+	background-color: rgba(38, 11, 2, 0.4);
+	border: 1px solid rgba(169, 169, 169, 0.22);
+
 }
 
 .attrH{
 	margin: 17px;
-    font-size: 30px;
-    text-shadow: 0px 1px 0px #443f3f;
+	font-size: 30px;
+	text-shadow: 0px 1px 0px #443f3f;
 }
 
 .buttonsP{
 	margin-top: 6px;
-    color: white;
-    text-shadow: 0px 1px 0px #443f3f;
-    margin-bottom: 10px;
-    margin-left: 19px;
-    letter-spacing: 1.5px;
-    font-family: 'Raleway', sans-serif;
+	color: white;
+	text-shadow: 0px 1px 0px #443f3f;
+	margin-bottom: 10px;
+	margin-left: 19px;
+	letter-spacing: 1.5px;
+	font-family: 'Raleway', sans-serif;
 }
 
 .drinks-container{
-  width: 45%;
-  margin: 0px 10px 10px 10px;
-  float: left;
-  height: 530px;
-  margin: 10px;
+	width: 45%;
+	margin: 0px 10px 10px 10px;
+	float: left;
+	height: 530px;
+	margin: 10px;
 }
 .userInfo{
-  display: inline;
-  background: rgba(54, 219, 172, .5);
-  width: 25%;
-  text-align: center;
-  float: left;
-  height: 450px;
-  margin: 85px 10px 10px 10px;
-  border-radius: 3px;
+	display: inline;
+	background: rgba(54, 219, 172, .5);
+	width: 25%;
+	text-align: center;
+	float: left;
+	height: 450px;
+	margin: 85px 10px 10px 10px;
+	border-radius: 3px;
 }
 
 .favDrinksScroll{
-  overflow-y: auto;
-  max-height: 71vh;
-  margin: 0px;
-  padding: 0px;
-  margin-top: 5px;
+	overflow-y: auto;
+	max-height: 71vh;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 5px;
 }
 .favDrinkTitle{
-  font-size: 35px;
-  margin: 15px;
-  color: white;
-  text-shadow: 0px 1px 0px #443f3f;
-  text-align: center;
+	font-size: 35px;
+	margin: 15px;
+	color: white;
+	text-shadow: 0px 1px 0px #443f3f;
+	text-align: center;
 }
 .bodyP{
-  margin-top: 75px;
+	margin-top: 75px;
 }
 
 ul.rig {
@@ -322,7 +327,7 @@ ul.rig li {
 ul.rig li h3 {
 	font-size: 20px;
 	letter-spacing: 1px;
-    font-weight: lighter;
+	font-weight: lighter;
 }
 
 .libraryImage {
@@ -353,10 +358,10 @@ ul.rig li h3 {
 
 .drinkHeader {
 	background: rgba(54, 219, 172, 0.4);
-    height: 475px;
-    width: 42%;
-    margin-top: 100px;
-    margin-left: 27%;
+	height: 475px;
+	width: 42%;
+	margin-top: 100px;
+	margin-left: 27%;
 	border-radius: 2px;
 }
 
@@ -375,73 +380,75 @@ div.drinkHeader h1 {
 
 .drinkName {
 	font-size: 45px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: -10px;
-    color: white;
-    letter-spacing: 1px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: -10px;
+	color: white;
+	letter-spacing: 1px;
 	font-family: 'Raleway', sans-serif;
 }
 
 .drinkDescriptions {
-  margin: auto;
-  margin-top: 10px;
-  padding: 5px;
-  display: block;
-  position: fixed;
-  width: 90%;
-}
-
-.drinkList {
-  list-style: none;
-	color: white;
-	font-family: 'Cabin', sans-serif;
-	line-height: 1.5em;
-	text-align: center;
-  	width: 38%;
+	margin: auto;
+	margin-top: 10px;
+	padding: 5px;
+	display: block;
+	position: fixed;
+	width: 90%;
 }
 
 .drinkList {
 	list-style: none;
-	    color: white;
-	    line-height: 1.8em;
-	    text-align: center;
-	    font-size: 14px;
-	    font-family: 'Raleway', sans-serif;
-	    margin-top: 8px;
-	    letter-spacing: 0.75px;
-	    font-weight: bold;
+	color: white;
+	font-family: 'Cabin', sans-serif;
+	line-height: 1.5em;
+	text-align: center;
+	width: 38%;
+}
+
+.drinkList {
+	list-style: none;
+	color: white;
+	line-height: 1.8em;
+	text-align: center;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 8px;
+	letter-spacing: 0.75px;
+	font-weight: bold;
 }
 
 .drinkBody{
-  display: block;
-  margin: auto;
+	display: block;
+	margin: auto;
 }
 
 .image {
 	border-radius: 5px;
-    box-shadow: 1px 1px 5px rgba(35, 30, 30, 0.4);
-    height: 200px;
-    text-align: center;
-    margin: auto;
+	box-shadow: 1px 1px 5px rgba(35, 30, 30, 0.4);
+	height: 200px;
+	text-align: center;
+	margin: auto;
 	margin-top: -20px;
-    display: block;
+	display: block;
 }
 
 .internalList {
-	font-size: 12px;font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	font-family:
+	'Raleway', sans-serif;
 }
 
 .recc{
-  margin: 10px;
+	margin: 10px;
 }
 
 #pro-list {
 	max-width: 320px;
-    line-height: 32px;
-    clear: both;
-    float: left;
+	line-height: 32px;
+	clear: both;
+	float: left;
 	margin-left: -20px;
 }
 
@@ -458,7 +465,7 @@ div.drinkHeader h1 {
 
 .col-Left {
 	width: 23%;
-    margin-left: 2%;
+	margin-left: 2%;
 	max-height: 413px;
 }
 
@@ -477,20 +484,43 @@ div.drinkHeader h1 {
 	float: left;
 	display: inline-block;
 }
-.mark img{
-	height: 209px;
-    border-radius: 4px;
-    border: 2px solid black;
+
+
+.prof-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.markStuff {
+.profButton {
+	color: @lightGray;
+	padding: 20px 10px;
+	width: 220px;
+	border: none;
+	font-size: 24px;
 	color: white;
-text-align: left;
-padding-left: 44px;
-padding-right: 10px;
+	margin: 100px 12px 40px 22px;
+	background-color: rgba(181, 154, 124, 0.41);
+	border-radius: 3px;
+	text-shadow: 0px 0px 0px #443f3f;
+	box-shadow: 1px 1px 1px rgba(35, 30, 30, 0.8);
 }
 
+.profButton:hover{
+	transform: scale(1.025);
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+	transition: all .2s;
+}
 
+footer {
+	font-size: 13px;
+	position: fixed;
+	bottom: 30px;
+	color: #F8FAEA;
+	font-weight: bold;
+	text-shadow: 0.5px 2px 0 rgba(0,0,0,0.2);
+	letter-spacing: 2px;
+}
 // font-family: 'Raleway', sans-serif;
 // font-family: 'Titillium Web', sans-serif;
 // font-family: 'Josefin Sans', sans-serif;
