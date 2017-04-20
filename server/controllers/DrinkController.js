@@ -16,7 +16,7 @@ router.get('/drink/:name', function(req, res){
 	var userId = req.session.userId;
 	Drink.findOne({name: name}, function(err, drink){
 		User.findById(userId, function(err, user){
-			user.favoriteDrinks.push(drink)
+			user.favoriteDrinks.push(drink);
 			user.save();
 			res.render('drink', drink)
 		})

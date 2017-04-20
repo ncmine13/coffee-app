@@ -127,7 +127,8 @@ router.get('/profile', function(req, res){
 	.findById(req.session.userId)
 	.populate('favoriteDrinks')
 	.exec(function (err, user){
-		res.render('profile', {name: req.session.username, favoriteDrinks: user.favoriteDrinks})
+		console.log(user.favoriteDrinks)
+		res.render('profile', {name: req.session.username, favoriteDrinks: user.favoriteDrinks.reverse()})
 	});
 
 });

@@ -8,3 +8,6 @@ Plans for the future:
 -Link to Google Maps and allow users to find nearby shops
 -Make entirely responsive
 -Emphasize buttons before user has selected drinks, and only show user's "Picks" after they have logged drinks
+
+![1](wireframes/Wireframe1.jpg)
+![2](wireframes/coffeeWireframe2.jpg)

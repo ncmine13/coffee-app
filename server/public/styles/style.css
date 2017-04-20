@@ -44,28 +44,19 @@ body {
 #reg-title {
   text-align: center;
   margin: 10px 10px 5px 10px;
-  font-family: 'Cabin', sans-serif;
   font-size: 40px;
 }
 #log-title {
   text-align: center;
-  margin: 10px 10px 5px 10px;
-  font-family: 'Cabin', sans-serif;
+  margin: 30px;
   font-size: 40px;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 .form-container {
   display: flex;
   justify-content: center;
-  margin-top: 200px;
-}
-.form-register {
-  margin: 10px;
-  justify-content: center;
-}
-.form-register input {
-  padding: 15px 50px;
-  margin: 10px;
-  font-size: 20px;
+  margin-top: 150px;
 }
 .form-button {
   justify-content: flex-end;
@@ -76,22 +67,39 @@ body {
   background-color: #bce0d6;
   color: #16153b;
 }
-.form-login {
+.form-regLog {
   margin: 10px;
-  background: rgba(54, 219, 172, 0.4);
+  background: rgba(4, 4, 4, 0.48);
   border-radius: 2px;
   padding: 10px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.65);
 }
-.form-login h1 {
+.form-regLog h1 {
   color: #eeeef1;
+  font-family: 'Raleway', sans-serif;
 }
-.form-login input {
-  padding: 13px 45px;
+.form-regLog input {
+  padding: 17px 45px;
   margin: 5px 10px;
   font-size: 20px;
   text-align: center;
   border-radius: 3px;
   border: none;
+  float: right;
+  margin-bottom: 25px;
+  box-shadow: none;
+  background-color: #eeeef1;
+}
+.form-regLog input.form-button {
+  padding: 13px 20px;
+  font-weight: bold;
+  color: #260B02;
+  background-color: #36dbac;
+}
+.form-regLog input.form-button:hover {
+  transform: scale(1.025);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+  transition: all .2s;
 }
 .main {
   margin: 10px;
@@ -434,7 +442,7 @@ div.drinkHeader h1 {
   font-size: 24px;
   color: white;
   margin: 100px 12px 40px 22px;
-  background-color: rgba(181, 154, 124, 0.41);
+  background-color: rgba(54, 219, 172, 0.6);
   border-radius: 3px;
   text-shadow: 0px 0px 0px #443f3f;
   box-shadow: 1px 1px 1px rgba(35, 30, 30, 0.8);
@@ -455,4 +463,37 @@ footer {
 }
 .regLog {
   margin: 20px;
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-size: cover;
+  }
+  .header ul li {
+    padding: 3px 8px 5px 0px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    margin: 0px;
+  }
+  .buttonsDiv {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 100px;
+  }
+  .profButton {
+    padding: 30px 10px;
+    width: 310px;
+    border: none;
+    font-size: 20px;
+    margin: 0px 0px 25px 0px;
+  }
+  .favDrinkTitle {
+    margin: 0px;
+    font-weight: lighter;
+  }
+  .drinks-container {
+    width: 90%;
+    margin: 0px;
+  }
 }
