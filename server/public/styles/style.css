@@ -56,7 +56,7 @@ body {
 .form-container {
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 10%;
 }
 .form-button {
   justify-content: flex-end;
@@ -145,38 +145,30 @@ body {
   color: white;
   padding-left: 33px;
 }
-.buttonDiv {
-  padding: 5px;
-  position: fixed;
-  bottom: 180px;
-  display: inline;
-  width: 100%;
+.mainquestion {
+  display: flex;
+  flex-direction: column;
 }
-.left-option {
-  margin-left: 300px;
+.mainquestion .h1Holder {
+  margin-left: 15%;
 }
-.right-option {
-  float: right;
-  margin-right: 300px;
-}
-.h1Holder {
-  height: 100px;
-}
-.do-you-want {
+.mainquestion .h1Holder .do-you-want {
   font-family: 'Raleway', sans-serif;
   font-weight: lighter;
   font-size: 55px;
   color: white;
   text-shadow: 0px 1px 0px #443f3f;
-  align-items: center;
-  margin-left: 39%;
   margin-top: 150px;
   width: 100%;
   letter-spacing: 1.5px;
 }
-.mainquestion {
-  position: fixed;
+.mainquestion .buttonDiv {
   display: flex;
+  justify-content: center;
+  margin: 7%;
+}
+.mainquestion .buttonDiv .left-option {
+  margin-right: 15%;
 }
 img.logo {
   width: 5em;
@@ -279,16 +271,21 @@ img.logo {
 .bodyP {
   margin-top: 75px;
 }
+.libDiv {
+  margin: 10% 4%;
+}
+.libDiv div {
+  float: right;
+  margin-left: 2%;
+}
 ul.rig {
   list-style: none;
   font-size: 0px;
-  padding: 20px;
 }
 ul.rig li {
   display: inline-block;
-  padding: 30px;
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
+  padding: 20px;
   font-size: 0.7rem;
   text-align: center;
   color: white;
@@ -299,7 +296,7 @@ ul.rig li h3 {
   font-weight: lighter;
 }
 .libraryImage {
-  height: 200px;
+  height: 50%;
   border-radius: 4px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 2px 1px 5px rgba(35, 30, 30, 0.8);

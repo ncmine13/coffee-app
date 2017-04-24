@@ -99,7 +99,6 @@ router.post('/login', function(req, res){
   var password = req.body.password;
   User.findOne({username: req.body.username}, function(err, user){
     if (user) {
-
       bcrypt.compare(password, user.password, function(err, match){
         //this method returns true or false
         //true , the passwords match..
@@ -110,11 +109,11 @@ router.post('/login', function(req, res){
           req.session.isLoggedIn = true
           res.redirect('/user/profile')
         }
-        else {
-          res.redirect('/user/register')
-        }
       });
     }
+	else {
+		res.render('login', {message: 'Invalid username or password'})
+	}
   });
 });
 
