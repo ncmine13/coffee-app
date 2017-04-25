@@ -8,11 +8,108 @@
 	</ul>
 </div>
 
-<div class="prof-container">
-	<div class="buttonsDiv">
-		<a href="/coffee/path"><button type="button" name="Recommend Drink" class="profButton">Need help choosing a drink?</button></a>
-		<a href="/coffee/library"><button type="button" name="Drink Library" class="profButton">Check the all the drinks</button></a>
+
+
+<div id="mainPageQ">
+	<h1>Hey, Coffee Picker, I'd like to </h1>
+	<select id="divSelector">
+		<option value="value0"> -- select an option -- </option>
+		<option value="value1">get a drink recommendation</option>
+		<option value="value2">see the drink library</option>
+		<option value="value3">view my previous recommendations</option>
+	</select>
+</div>
+
+
+<div id="questionDiv" class="container" style="display:none;">
+	<div class="mainquestion">
+		<div class="h1Holder">
+			<h1 class="do-you-want">Do you want something...</h1>
+	    </div>
+		<div class="buttonDiv">
+			    <button class="left-option buttons">sweet?</button>
+			    <button class="right-option buttons">unsweetened?</button>
+	    </div>
 	</div>
+</div>
+
+<div id="libraryDiv" class="container" style="display:none;">
+	<h1>Drink Library</h1>
+
+	<div class="libDiv">
+		<div>
+			<ul class="rig">
+				<li>
+					<img class="libraryImage" src="/images/ChaiLatte.jpg" />
+					<h3>Chai Latte</h3>
+					<p>Contains 190 calories in a 12-oz. drink</p>
+				</li>
+				<li>
+					<img class="libraryImage" src="/images/chamomile.jpg" />
+					<h3>Chamomile Tea</h3>
+					<p>Contains 3 calories in a 16-oz. drink</p>
+				</li>
+				<li>
+					<img class="libraryImage" src="/images/ChocolateMilk.jpg" />
+					<h3>Chocolate Milk</h3>
+					<p>Contains 255 calories in a 12-oz. drink</p>
+				</li>
+				<li>
+					<img class="libraryImage" src="/images/Coffee.jpg" />
+					<h3>Coffee</h3>
+					<p>Contains 4 calories in a 12-oz. drink</p>
+				</li>
+				<li>
+					<img class="libraryImage" src="/images/ColdBrew.jpg" />
+					<h3>Cold Brew</h3>
+					<p>Contains 4 calories in a 16-oz. drink</p>
+				</li>
+				<li>
+					<img class="libraryImage" src="/images/HotChocolate.jpg" />
+					<h3>Hot Chocolate</h3>
+					<p>Contains 255 calories in a 12-oz. drink</p>
+				</li>
+				<li>
+					<img class="libraryImage" src="/images/IcedChai.jpg" />
+					<h3>Iced Chai</h3>
+					<p>Contains 190 calories in a 16-oz. drink</p>
+				</li>
+				<li>
+					<img class="libraryImage" src="/images/IcedLatte.jpg" />
+					<h3>Iced Latte</h3>
+					<p>Contains 150 calories in a 16-oz. drink</p>
+				</li>
+				<li>
+					<img class="libraryImage" src="/images/IcedMocha.jpg" />
+					<h3>Iced Mocha</h3>
+					<p>Contains 255 calories in a 16-oz. drink</p>
+				</li>
+				<li>
+					<img class="libraryImage" src="/images/IcedTea.jpg" />
+					<h3>Iced Blueberry Tea</h3>
+					<p>Contains 3 calories in a 16-oz. drink</p>
+				</li>
+				<li>
+					<img class="libraryImage" src="/images/Latte.jpg" />
+					<h3>Latte</h3>
+					<p>Contains 150 calories in a 12-oz. drink</p>
+				</li>
+				<li>
+					<img class="libraryImage" src="/images/mocha.jpg" />
+					<h3>Mocha</h3>
+					<p>Contains 255 calories in a 12-oz. drink</p>
+				</li>
+				<li>
+					<img class="libraryImage" src="/images/Steamer.jpg" />
+					<h3>Steamer</h3>
+					<p>Contains 200 calories in a 12-oz. drink</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="historyDiv" class="container" style="display:none;">
 	<div class="drinks-container">
 		<h2 class="favDrinkTitle">{{name}}'s Picks</h2>
 		<div class="favDrinksScroll">

@@ -145,6 +145,16 @@ body {
   color: white;
   padding-left: 33px;
 }
+#mainPageQ {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+h1 {
+  color: white;
+}
+.hidden {
+  display: none;
+}
 .mainquestion {
   display: flex;
   flex-direction: column;
@@ -431,24 +441,6 @@ div.drinkHeader h1 {
   flex-direction: column;
   align-items: center;
 }
-.profButton {
-  color: #eeeef1;
-  padding: 20px 10px;
-  width: 220px;
-  border: none;
-  font-size: 24px;
-  color: white;
-  margin: 100px 12px 40px 22px;
-  background-color: rgba(54, 219, 172, 0.6);
-  border-radius: 3px;
-  text-shadow: 0px 0px 0px #443f3f;
-  box-shadow: 1px 1px 1px rgba(35, 30, 30, 0.8);
-}
-.profButton:hover {
-  transform: scale(1.025);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
-  transition: all .2s;
-}
 footer {
   font-size: 13px;
   position: fixed;
@@ -464,33 +456,5 @@ footer {
 @media screen and (max-width: 600px) {
   body {
     background-size: cover;
-  }
-  .header ul li {
-    padding: 3px 8px 5px 0px;
-    font-size: 12px;
-    letter-spacing: 0px;
-    margin: 0px;
-  }
-  .buttonsDiv {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-top: 100px;
-  }
-  .profButton {
-    padding: 30px 10px;
-    width: 310px;
-    border: none;
-    font-size: 20px;
-    margin: 0px 0px 25px 0px;
-  }
-  .favDrinkTitle {
-    margin: 0px;
-    font-weight: lighter;
-  }
-  .drinks-container {
-    width: 90%;
-    margin: 0px;
   }
 }

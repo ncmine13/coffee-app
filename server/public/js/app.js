@@ -4,6 +4,32 @@ var caffeine = " "
 var hot = " "
 var flavor = " "
 
+$('#divSelector').on('change', function(){
+	console.log("selectorrr")
+	var val = this.val();
+
+	
+
+	if ($(this).val()=== "value0"){
+		$('#questionDiv').hide();
+		$('#libraryDiv').hide();
+		$('#historyDiv').hide();
+	} else if ($(this).val()=== "value1") {
+		$('#questionDiv').show();
+		$('#libraryDiv').hide();
+		$('#historyDiv').hide();
+	} else if ($(this).val()=== "value2") {
+		$('#questionDiv').hide();
+		$('#libraryDiv').show();
+		$('#historyDiv').hide();
+	} else if ($(this).val()=== "value3") {
+		$('#questionDiv').hide();
+		$('#libraryDiv').hide();
+		$('#historyDiv').show();
+	}
+})
+
+
 $.ajax({
 	url: '/coffee/coffeeDB',
 	type: 'get',
