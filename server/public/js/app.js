@@ -200,6 +200,7 @@ $('select').each(function(){
 
 
 
+
   $styledSelect.click(function(e) {
      if($('.select-options').is(':visible')) {
         e.stopPropagation();
@@ -215,16 +216,48 @@ $('select').each(function(){
             $(this).removeClass('active').next('ul.select-options').hide();
         });
         $(this).toggleClass('active').next('ul.select-options').toggle();
+		console.log($(this))
+		console.log($(this).hasClass('active'))
+
      }//end if
     });
 
     $listItems.click(function(e) {
+		console.log($listItems[0].textContent)
+		console.log($listItems[1].textContent)
+
         e.stopPropagation();
         $styledSelect.text($(this).text()).removeClass('active');
-        $this.val($(this).attr('rel'));
+		$this.val($(this).attr('rel'));
+		//show the div with the id of that rel BUT THEN HIDE IT AFTER
+		// console.log($this)
+		// console.log($this[0].childElementCount)
+		// console.log($($this[0].children))
+		var optArray = $($this[0].children);
+		console.log(optArray)
+
+		var index = $this.val()
+		for(i=1; i<4; i++){
+			thisDiv = "#" + optArray[i].value;
+			if(index === optArray[i].value){
+				console.log(index + " this is index")
+				console.log(optArray[i].value + " this is optArray")
+				$(thisDiv).show();
+			} else {
+				$(thisDiv).hide();
+			}
+		}
+
+		// if($this.val().hasClass('active') {
+		// 	console.log()
+		// // })
+		// $('div').next('#' + $this.val()).show();
+
         $list.hide();
-        //console.log($this.val());
-    });``
+        console.log($this.val());
+    });
+
+
 
     $(document).click(function() {
         $styledSelect.removeClass('active');
