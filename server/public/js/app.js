@@ -4,30 +4,17 @@ var caffeine = " "
 var hot = " "
 var flavor = " "
 
-$('#divSelector').on('change', function(){
-	console.log("selectorrr")
-	var val = this.val();
 
-	
 
-	if ($(this).val()=== "value0"){
-		$('#questionDiv').hide();
-		$('#libraryDiv').hide();
-		$('#historyDiv').hide();
-	} else if ($(this).val()=== "value1") {
-		$('#questionDiv').show();
-		$('#libraryDiv').hide();
-		$('#historyDiv').hide();
-	} else if ($(this).val()=== "value2") {
-		$('#questionDiv').hide();
-		$('#libraryDiv').show();
-		$('#historyDiv').hide();
-	} else if ($(this).val()=== "value3") {
-		$('#questionDiv').hide();
-		$('#libraryDiv').hide();
-		$('#historyDiv').show();
-	}
-})
+
+//if the option value equals the div's class name, show that div
+var arr = [
+	"0",
+	"questionDiv",
+	"libraryDiv",
+	"historyDiv"
+]
+
 
 
 $.ajax({
@@ -177,3 +164,91 @@ function checkDrink(){
 	window.location = "/coffee/drink/" + drink;
 	console.log(drink);
 }
+
+
+
+//for each select tag
+$('select').each(function(){
+    var $this = $(this), numberOfOptions = $(this).children('option').length;
+
+//add the class select-hidden to the select tag
+//wrap it in a div with the class "select"
+//after this div make another div with the class "select-styled"
+    $this.addClass('select-hidden');
+    $this.wrap('<div class="select"></div>');
+    $this.after('<div class="select-styled"></div>');
+
+
+//the first element with the class select-styled will have the text of the first option tag
+    var $styledSelect = $this.next('div.select-styled');
+    $styledSelect.text($this.children('option').eq(0).text());
+
+//insert an unordered list with the class 'select-options' after the styledSelect div
+    var $list = $('<ul />', {
+        'class': 'select-options'
+    }).insertAfter($styledSelect);
+
+//assigning both the text and the value of the select tag to be the same as those on the option tag
+    for (var i = 0; i < numberOfOptions; i++) {
+        $('<li />', {
+            text: $this.children('option').eq(i).text(),
+            rel: $this.children('option').eq(i).val()
+        }).appendTo($list);
+    }
+
+    var $listItems = $list.children('li');
+
+
+
+  $styledSelect.click(function(e) {
+     if($('.select-options').is(':visible')) {
+        e.stopPropagation();
+        $styledSelect.text($(this).text()).removeClass('active');
+        $this.val($(this).attr('rel'));
+
+        $list.hide();
+        //console.log($this.val());
+
+     } else {
+        e.stopPropagation();
+        $('div.select-styled.active').each(function(){
+            $(this).removeClass('active').next('ul.select-options').hide();
+        });
+        $(this).toggleClass('active').next('ul.select-options').toggle();
+     }//end if
+    });
+
+    $listItems.click(function(e) {
+        e.stopPropagation();
+        $styledSelect.text($(this).text()).removeClass('active');
+        $this.val($(this).attr('rel'));
+        $list.hide();
+        //console.log($this.val());
+    });``
+
+    $(document).click(function() {
+        $styledSelect.removeClass('active');
+        $list.hide();
+    });
+
+});
+
+$('#divSelector').on('change', function(){
+	console.log("selectorrr")
+	var index = $(this).val();
+	// var activeBlock = document.getElementById('active-block');
+	// var blocks = document.querySelectorAll('.container');
+	//
+	// if(activeBlock) activeBlock.id = '';
+	// if(!isNaN(index)) blocks[index].id = 'active-block';
+
+	for(i=0; i<arr.length; i++){
+		thisDiv = "#" + arr[i];
+		if(arr[i] === index){
+			//show the element with that id
+			$(thisDiv).show();
+		} else {
+			$(thisDiv).hide();
+		}
+	}
+});

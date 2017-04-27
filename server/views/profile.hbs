@@ -1,27 +1,28 @@
-<div class="header">
-	<img class="logo" src="/images/coffeeMug.png" alt="">
-	<ul>
-		<a href="/user/profile"><li>Profile</li></a>
-		<a href="/coffee/library/"><li>Library</li></a>
-		<a href="/coffee/path/"><li>Recommendation</li></a>
-		<a class="logout"href="/user/logout"><li>Log Out</li></a>
-	</ul>
-</div>
+<a style="color:white;" class="logout"href="/user/logout">Log Out</a>
 
 
 
 <div id="mainPageQ">
-	<h1>Hey, Coffee Picker, I'd like to </h1>
-	<select id="divSelector">
-		<option value="value0"> -- select an option -- </option>
-		<option value="value1">get a drink recommendation</option>
-		<option value="value2">see the drink library</option>
-		<option value="value3">view my previous recommendations</option>
-	</select>
+	<div>
+		<h1>Hey, Coffee Picker, I'd like to </h1>
+	</div>
+	<div>
+		<select id="divSelector">
+		    <option value="hide">-- Select an Option --</option>
+		    <option value="questionDiv">get a drink recommendation</option>
+		    <option value="libraryDiv">see the drink library</option>
+		    <option value="historyDiv">view my previous recommendations</option>
+		</select>
+	</div>
 </div>
 
 
+
+
+
+
 <div id="questionDiv" class="container" style="display:none;">
+{{!-- <div class="container" data-value="get a drink recommendation"> --}}
 	<div class="mainquestion">
 		<div class="h1Holder">
 			<h1 class="do-you-want">Do you want something...</h1>
@@ -34,8 +35,7 @@
 </div>
 
 <div id="libraryDiv" class="container" style="display:none;">
-	<h1>Drink Library</h1>
-
+{{!-- <div class="container" data-value="see the drink library"> --}}
 	<div class="libDiv">
 		<div>
 			<ul class="rig">
@@ -110,6 +110,7 @@
 </div>
 
 <div id="historyDiv" class="container" style="display:none;">
+{{!-- <div class="container" data-value="view my previous recommendations"> --}}
 	<div class="drinks-container">
 		<h2 class="favDrinkTitle">{{name}}'s Picks</h2>
 		<div class="favDrinksScroll">
@@ -132,3 +133,13 @@
 		</div>
 	</div>
 </div>
+
+<style>
+/*.container{
+	display:none;
+}
+
+#active-block.container{
+	display:block;
+}*/
+</style>
