@@ -416,6 +416,7 @@ body .drinkDescriptions {
 body .returnToProf {
   padding: 10px 15px;
   margin-top: 5%;
+  margin-bottom: 5%;
   background-color: #AD8484;
   border: none;
   border-radius: 3px;
