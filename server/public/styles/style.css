@@ -14,8 +14,11 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: 'Raleway', sans-serif;
+  /*li {
+	display:block;
+}*/
 }
-.header {
+body .header {
   /*	background: @lightGray;
 	height: 70px;
 	width: 100%;
@@ -24,13 +27,13 @@ body {
 	margin: 0;
 	padding: 0;*/
 }
-.header ul {
+body .header ul {
   text-align: right;
   display: inline;
   float: right;
   margin: 20px 0px 10px 10px;
 }
-.header ul li {
+body .header ul li {
   padding: 6px 13px 5px 12px;
   text-decoration: none;
   display: inline-block;
@@ -41,27 +44,27 @@ body {
   font-family: 'Vollkorn', serif;
   letter-spacing: 1.5px;
 }
-.header ul li:hover {
+body .header ul li:hover {
   color: white;
 }
-#reg-title {
+body #reg-title {
   text-align: center;
   margin: 10px 10px 5px 10px;
   font-size: 40px;
 }
-#log-title {
+body #log-title {
   text-align: center;
   margin: 30px;
   font-size: 40px;
   font-weight: lighter;
   letter-spacing: 2px;
 }
-.form-container {
+body .form-container {
   display: flex;
   justify-content: center;
   margin-top: 10%;
 }
-.form-button {
+body .form-button {
   justify-content: flex-end;
   border: none;
   border-radius: 2px;
@@ -70,18 +73,18 @@ body {
   background-color: #bce0d6;
   color: #16153b;
 }
-.form-regLog {
+body .form-regLog {
   margin: 10px;
   background: rgba(4, 4, 4, 0.48);
   border-radius: 2px;
   padding: 10px;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.65);
 }
-.form-regLog h1 {
+body .form-regLog h1 {
   color: #eeeef1;
   font-family: 'Raleway', sans-serif;
 }
-.form-regLog input {
+body .form-regLog input {
   padding: 17px 45px;
   margin: 5px 10px;
   font-size: 20px;
@@ -94,30 +97,30 @@ body {
   color: #702828;
   background-color: #eeeef1;
 }
-.form-regLog input.form-button {
+body .form-regLog input.form-button {
   padding: 13px 20px;
   /*font-weight: bold;*/
   color: #eeeef1;
   background-color: #AD8484;
 }
-.form-regLog input.form-button:hover {
+body .form-regLog input.form-button:hover {
   transform: scale(1.025);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   transition: all .2s;
 }
-.main {
+body .main {
   margin: 10px;
   display: inline;
 }
-.error {
+body .error {
   display: flex;
   justify-content: center;
 }
-.error p {
+body .error p {
   text-align: center;
   font-family: 'Cabin', sans-serif;
 }
-.main {
+body .main {
   background-color: rgba(54, 219, 172, 0.75);
   display: block;
   width: 100%;
@@ -126,7 +129,7 @@ body {
   margin: 0px;
   margin-top: 95px;
 }
-.buttons {
+body .buttons {
   padding: 30px 10px;
   width: 250px;
   border: none;
@@ -137,71 +140,71 @@ body {
   background-color: #bce0d6;
   color: #16153b;
 }
-.buttons:hover {
+body .buttons:hover {
   transform: scale(1.025);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   transition: all .2s;
 }
-.username {
+body .username {
   font-size: 45px;
   text-align: left;
   margin: 10px;
   color: white;
   padding-left: 33px;
 }
-.logout {
+body .logout {
   display: block;
   padding: 10px;
 }
-#mainPageQ {
+body #mainPageQ {
   margin-top: 3%;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-#mainPageQ .colleft {
+body #mainPageQ .colleft {
   width: 50%;
 }
-#mainPageQ .colleft h1 {
+body #mainPageQ .colleft h1 {
   font-weight: lighter;
   text-align: right;
   margin-right: 5%;
 }
-#mainPageQ .colright {
+body #mainPageQ .colright {
   width: 50%;
 }
-#mainPageQ .colright .select {
+body #mainPageQ .colright .select {
   font-size: 30px;
   width: 70%;
   margin-right: 5%;
   font-weight: lighter;
   text-align: center;
 }
-#mainPageQ .colright .select .select-styled {
+body #mainPageQ .colright .select .select-styled {
   padding: 5% 10%;
   border: 2px solid white;
   border-radius: 2px;
 }
-#mainPageQ .colright .select:hover {
+body #mainPageQ .colright .select:hover {
   background-color: #B9F3E9;
   /*			opacity: .7;*/
   color: #260B02;
   transition: all 0.2s ease-in;
 }
-h1 {
+body h1 {
   color: white;
 }
-.hidden {
+body .hidden {
   display: none;
 }
-.mainquestion {
+body .mainquestion {
   display: flex;
   flex-direction: column;
 }
-.mainquestion .h1Holder {
+body .mainquestion .h1Holder {
   margin-left: 15%;
 }
-.mainquestion .h1Holder .do-you-want {
+body .mainquestion .h1Holder .do-you-want {
   font-family: 'Raleway', sans-serif;
   font-weight: lighter;
   font-size: 55px;
@@ -210,29 +213,29 @@ h1 {
   width: 100%;
   letter-spacing: 1.5px;
 }
-.mainquestion .buttonDiv {
+body .mainquestion .buttonDiv {
   display: flex;
   justify-content: center;
   margin: 5%;
 }
-.mainquestion .buttonDiv button {
+body .mainquestion .buttonDiv button {
   color: #260B02;
 }
-.mainquestion .buttonDiv .left-option {
+body .mainquestion .buttonDiv .left-option {
   margin-right: 15%;
 }
-img.logo {
+body img.logo {
   width: 5em;
   margin: -3px 0px 0px 10px;
   display: inline;
 }
-.drinkSpecs {
+body .drinkSpecs {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 6%;
 }
-.recommendDrink {
+body .recommendDrink {
   padding: 20px 10px;
   width: 220px;
   border: none;
@@ -246,12 +249,12 @@ img.logo {
   color: #15921a;
   text-shadow: 0px 0px 0px #443f3f;
 }
-.recommendDrink:hover {
+body .recommendDrink:hover {
   transform: scale(1.025);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   transition: all .2s;
 }
-.drinkLibrary {
+body .drinkLibrary {
   padding: 20px 10px;
   width: 220px;
   border: none;
@@ -265,12 +268,12 @@ img.logo {
   color: #15921a;
   text-shadow: 0px 0px 0px #443f3f;
 }
-.drinkLibrary:hover {
+body .drinkLibrary:hover {
   transform: scale(1.025);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   transition: all .2s;
 }
-.lists {
+body .lists {
   margin: 0px 10px 12px 10px;
   padding: 5px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
@@ -280,14 +283,14 @@ img.logo {
   background-color: rgba(38, 11, 2, 0.4);
   border: 1px solid rgba(169, 169, 169, 0.22);
 }
-.attrH {
+body .attrH {
   margin: 17px;
   font-size: 1.5em;
   text-shadow: 0px 1px 0px #443f3f;
   font-weight: lighter;
   letter-spacing: 2px;
 }
-.buttonsP {
+body .buttonsP {
   margin-top: 6px;
   color: white;
   text-shadow: 0px 1px 0px #443f3f;
@@ -296,10 +299,10 @@ img.logo {
   letter-spacing: 1.5px;
   font-family: 'Raleway', sans-serif;
 }
-.drinks-container {
+body .drinks-container {
   width: 65%;
 }
-.userInfo {
+body .userInfo {
   display: inline;
   background: rgba(54, 219, 172, 0.5);
   width: 25%;
@@ -309,14 +312,14 @@ img.logo {
   margin: 85px 10px 10px 10px;
   border-radius: 3px;
 }
-.favDrinksScroll {
+body .favDrinksScroll {
   overflow-y: auto;
   max-height: 71vh;
   margin: 0px;
   padding: 0px;
   margin-top: 5px;
 }
-.favDrinkTitle {
+body .favDrinkTitle {
   font-size: 35px;
   margin: 15px;
   color: white;
@@ -325,26 +328,26 @@ img.logo {
   font-weight: lighter;
   letter-spacing: 2px;
 }
-.bodyP {
+body .bodyP {
   margin-top: 75px;
 }
-.libDiv {
+body .libDiv {
   margin: 10% 4%;
 }
-.libDiv div {
+body .libDiv div {
   float: right;
   margin-left: 2%;
 }
-#historyDiv {
+body #historyDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-ul.rig {
+body ul.rig {
   list-style: none;
   font-size: 0px;
 }
-ul.rig li {
+body ul.rig li {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
   padding: 20px;
@@ -352,33 +355,33 @@ ul.rig li {
   text-align: center;
   color: white;
 }
-ul.rig li h3 {
+body ul.rig li h3 {
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: lighter;
 }
-.libraryImage {
+body .libraryImage {
   height: 50%;
   border-radius: 4px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 2px 1px 5px rgba(35, 30, 30, 0.8);
 }
-.list-container {
+body .list-container {
   display: inline-block;
 }
-.thumbnail {
+body .thumbnail {
   margin: 0px 0px 10px 20px;
   height: 150px;
   border-radius: 4px;
   margin-left: 20px;
   margin-top: 0px;
 }
-.internalList {
+body .internalList {
   list-style: none;
   font-size: 13px;
   font-family: 'Raleway', sans-serif;
 }
-.drinkHeader {
+body .drinkHeader {
   background-color: rgba(166, 211, 203, 0.66);
   text-align: center;
   height: 475px;
@@ -387,16 +390,16 @@ ul.rig li h3 {
   margin-left: 27%;
   border-radius: 2px;
 }
-.drinkHeader {
+body .drinkHeader {
   color: white;
   font-weight: lighter;
   margin-top: 100px;
   margin: auto;
 }
-div.drinkHeader h1 {
+body div.drinkHeader h1 {
   margin-top: 20px;
 }
-.drinkName {
+body .drinkName {
   font-size: 45px;
   display: flex;
   flex-direction: column;
@@ -406,35 +409,35 @@ div.drinkHeader h1 {
   letter-spacing: 1px;
   font-family: 'Raleway', sans-serif;
 }
-.drinkDescriptions {
+body .drinkDescriptions {
   margin-top: 10px;
   width: 90%;
 }
-.returnToProf {
+body .returnToProf {
   padding: 10px 15px;
   margin-top: 5%;
   background-color: #AD8484;
   border: none;
   border-radius: 3px;
 }
-.returnToProf a {
+body .returnToProf a {
   text-decoration: none;
   color: #eeeef1;
   font-size: 20px;
 }
-.returnToProf:hover {
+body .returnToProf:hover {
   transform: scale(1.025);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   transition: all .3s;
 }
-.drinkList {
+body .drinkList {
   list-style: none;
   color: white;
   font-family: 'Cabin', sans-serif;
   line-height: 1.5em;
   text-align: center;
 }
-.drinkList {
+body .drinkList {
   list-style: none;
   color: white;
   line-height: 1.8em;
@@ -445,11 +448,11 @@ div.drinkHeader h1 {
   letter-spacing: 0.75px;
   font-weight: bold;
 }
-.drinkBody {
+body .drinkBody {
   display: block;
   margin: auto;
 }
-.image {
+body .image {
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(35, 30, 30, 0.4);
   height: 200px;
@@ -458,54 +461,54 @@ div.drinkHeader h1 {
   margin-top: -20px;
   display: block;
 }
-.internalList {
+body .internalList {
   font-size: 12px;
   font-family: 'Raleway', sans-serif;
 }
-.recc {
+body .recc {
   margin: 10px;
 }
-#pro-list {
+body #pro-list {
   max-width: 320px;
   line-height: 32px;
   clear: both;
   float: left;
   margin-left: -20px;
 }
-#listID {
+body #listID {
   margin-bottom: 10px;
 }
-#ourRec {
+body #ourRec {
   text-align: center;
   color: white;
   padding-top: 15px;
   font-family: 'Raleway', sans-serif;
 }
-.col-Left {
+body .col-Left {
   width: 23%;
   margin-left: 2%;
   max-height: 413px;
 }
-.col-Right {
+body .col-Right {
   width: 49%;
   border-radius: 4px;
   float: right;
   margin: 10px;
   height: 500px;
 }
-.col-Mid {
+body .col-Mid {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   width: 23%;
   float: left;
   display: inline-block;
 }
-.prof-container {
+body .prof-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-footer {
+body footer {
   font-size: 13px;
   position: fixed;
   bottom: 30px;
@@ -514,18 +517,15 @@ footer {
   text-shadow: 0.5px 2px 0 rgba(0, 0, 0, 0.2);
   letter-spacing: 2px;
 }
-.regLog {
+body .regLog {
   margin: 20px;
 }
-/*li {
-	display:block;
-}*/
-.select-hidden {
+body .select-hidden {
   display: none;
   visibility: hidden;
   padding-right: 10px;
 }
-.select {
+body .select {
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -533,13 +533,13 @@ footer {
   color: #eeeef1;
   width: 60%;
 }
-.select-styled {
+body .select-styled {
   right: 0;
   bottom: 0px;
   left: 0;
   @include transition(all 0.2s ease-in);
 }
-.select-styled:after {
+body .select-styled:after {
   content: "";
   width: 0;
   height: 0;
@@ -548,19 +548,19 @@ footer {
   top: 16px;
   right: 10px;
 }
-.select-styled:hover {
+body .select-styled:hover {
   background-color: #9ab0a6;
 }
-.select-styled:active,
-.select-styled.active {
+body .select-styled:active,
+body .select-styled.active {
   background-color: #92a99e;
 }
-.select-styled:active:after,
-.select-styled.active:after {
+body .select-styled:active:after,
+body .select-styled.active:after {
   top: 9px;
   border-color: transparent transparent #eeeef1 transparent;
 }
-.select-options {
+body .select-options {
   display: none;
   position: absolute;
   top: 100%;
@@ -572,7 +572,7 @@ footer {
   list-style: none;
   /*  background-color: darken(@green, 5);*/
 }
-.select-options li {
+body .select-options li {
   display: block;
   margin: 0;
   padding: 12px 0;
@@ -582,12 +582,12 @@ footer {
   font-size: 22px;
   /*    @include transition(all 0.15s ease-in);*/
 }
-.select-options li:hover {
+body .select-options li:hover {
   color: white;
   background-color: #A6D3CB;
 }
 @media screen and (max-width: 600px) {
-  body {
+  body body {
     background-size: cover;
   }
 }

@@ -37,7 +37,7 @@ var authenticateRoute = function(req, res, next){
 			}
 		}
 	}
-// set before the controllers so it intercepts and checks before controllers start to take over (AKA middleware)
+
 // app.use(authenticateRoute);
 // var authenticateRoute = function(req, res, next){
 // 	if (req.originalUrl === '/user/login' || req.originalUrl === '/user/register') {
@@ -53,7 +53,6 @@ var authenticateRoute = function(req, res, next){
 // 			}
 // 		}
 // 	}
-//set before the controllers so it intercepts and checks before controllers start to take over (AKA middleware)
 app.use(authenticateRoute);
 
 var UserController = require('./controllers/UserController');
@@ -65,6 +64,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use('/coffee', DrinkController);
 app.use('/user', UserController);
 
-// server.listen(process.env.PORT || 3000);
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
+// server.listen(3000);
 
