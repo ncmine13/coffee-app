@@ -189,7 +189,7 @@ $('select').each(function(){
     }).insertAfter($styledSelect);
 
 //assigning both the text and the value of the select tag to be the same as those on the option tag
-    for (var i = 0; i < numberOfOptions; i++) {
+    for (var i = 1; i < numberOfOptions; i++) {
         $('<li />', {
             text: $this.children('option').eq(i).text(),
             rel: $this.children('option').eq(i).val()
@@ -204,11 +204,11 @@ $('select').each(function(){
   $styledSelect.click(function(e) {
      if($('.select-options').is(':visible')) {
         e.stopPropagation();
+		console.log("this da clicky")
         $styledSelect.text($(this).text()).removeClass('active');
         $this.val($(this).attr('rel'));
 
         $list.hide();
-        //console.log($this.val());
 
      } else {
         e.stopPropagation();
@@ -219,23 +219,22 @@ $('select').each(function(){
 		console.log($(this))
 		console.log($(this).hasClass('active'))
 
-     }//end if
+     }
     });
 
     $listItems.click(function(e) {
 		console.log($listItems[0].textContent)
 		console.log($listItems[1].textContent)
+		// var selectDiv = $('div.select-styled')
+		// console.log("this is " + selectDiv)
+		// $('div.select-styled.active')[0].textContent.hide();
+		// $($listItems[0].textContent.hide())
 
         e.stopPropagation();
         $styledSelect.text($(this).text()).removeClass('active');
 		$this.val($(this).attr('rel'));
-		//show the div with the id of that rel BUT THEN HIDE IT AFTER
-		// console.log($this)
-		// console.log($this[0].childElementCount)
 		// console.log($($this[0].children))
 		var optArray = $($this[0].children);
-		console.log(optArray)
-
 		var index = $this.val()
 		for(i=1; i<4; i++){
 			thisDiv = "#" + optArray[i].value;
@@ -247,16 +246,8 @@ $('select').each(function(){
 				$(thisDiv).hide();
 			}
 		}
-
-		// if($this.val().hasClass('active') {
-		// 	console.log()
-		// // })
-		// $('div').next('#' + $this.val()).show();
-
         $list.hide();
-        console.log($this.val());
     });
-
 
 
     $(document).click(function() {
@@ -264,24 +255,4 @@ $('select').each(function(){
         $list.hide();
     });
 
-});
-
-$('#divSelector').on('change', function(){
-	console.log("selectorrr")
-	var index = $(this).val();
-	// var activeBlock = document.getElementById('active-block');
-	// var blocks = document.querySelectorAll('.container');
-	//
-	// if(activeBlock) activeBlock.id = '';
-	// if(!isNaN(index)) blocks[index].id = 'active-block';
-
-	for(i=0; i<arr.length; i++){
-		thisDiv = "#" + arr[i];
-		if(arr[i] === index){
-			//show the element with that id
-			$(thisDiv).show();
-		} else {
-			$(thisDiv).hide();
-		}
-	}
 });

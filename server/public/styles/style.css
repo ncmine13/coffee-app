@@ -1,3 +1,5 @@
+/*@brown: #6A2B15;
+@beige: #B59A7C;*/
 html {
   background-size: 100%;
   margin: 0px;
@@ -11,15 +13,16 @@ body {
   background-color: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
 }
 .header {
-  background: #eeeef1;
-  height: 70px;
-  width: 100%;
-  top: 0px;
-  position: fixed;
-  margin: 0;
-  padding: 0;
+  /*	background: @lightGray;
+	height: 70px;
+	width: 100%;
+	top: 0px;
+	position: fixed;
+	margin: 0;
+	padding: 0;*/
 }
 .header ul {
   text-align: right;
@@ -33,7 +36,7 @@ body {
   display: inline-block;
   margin: 0px 10px 5px 5px;
   font-size: 20px;
-  color: #260B02;
+  color: #702828;
   align-content: flex-end;
   font-family: 'Vollkorn', serif;
   letter-spacing: 1.5px;
@@ -88,13 +91,14 @@ body {
   float: right;
   margin-bottom: 25px;
   box-shadow: none;
+  color: #702828;
   background-color: #eeeef1;
 }
 .form-regLog input.form-button {
   padding: 13px 20px;
-  font-weight: bold;
-  color: #260B02;
-  background-color: #36dbac;
+  /*font-weight: bold;*/
+  color: #eeeef1;
+  background-color: #AD8484;
 }
 .form-regLog input.form-button:hover {
   transform: scale(1.025);
@@ -145,9 +149,44 @@ body {
   color: white;
   padding-left: 33px;
 }
+.logout {
+  display: block;
+  padding: 10px;
+}
 #mainPageQ {
-  margin-top: 10%;
-  margin-left: 10%;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#mainPageQ .colleft {
+  width: 50%;
+}
+#mainPageQ .colleft h1 {
+  font-weight: lighter;
+  text-align: right;
+  margin-right: 5%;
+}
+#mainPageQ .colright {
+  width: 50%;
+}
+#mainPageQ .colright .select {
+  font-size: 30px;
+  width: 70%;
+  margin-right: 5%;
+  font-weight: lighter;
+  text-align: center;
+}
+#mainPageQ .colright .select .select-styled {
+  padding: 5% 10%;
+  border: 2px solid white;
+  border-radius: 2px;
+}
+#mainPageQ .colright .select:hover {
+  background-color: #B9F3E9;
+  /*			opacity: .7;*/
+  color: #260B02;
+  transition: all 0.2s ease-in;
 }
 h1 {
   color: white;
@@ -168,14 +207,16 @@ h1 {
   font-size: 55px;
   color: white;
   text-shadow: 0px 1px 0px #443f3f;
-  margin-top: 150px;
   width: 100%;
   letter-spacing: 1.5px;
 }
 .mainquestion .buttonDiv {
   display: flex;
   justify-content: center;
-  margin: 7%;
+  margin: 5%;
+}
+.mainquestion .buttonDiv button {
+  color: #260B02;
 }
 .mainquestion .buttonDiv .left-option {
   margin-right: 15%;
@@ -184,6 +225,12 @@ img.logo {
   width: 5em;
   margin: -3px 0px 0px 10px;
   display: inline;
+}
+.drinkSpecs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6%;
 }
 .recommendDrink {
   padding: 20px 10px;
@@ -235,8 +282,10 @@ img.logo {
 }
 .attrH {
   margin: 17px;
-  font-size: 30px;
+  font-size: 1.5em;
   text-shadow: 0px 1px 0px #443f3f;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 .buttonsP {
   margin-top: 6px;
@@ -248,11 +297,7 @@ img.logo {
   font-family: 'Raleway', sans-serif;
 }
 .drinks-container {
-  width: 58%;
-  margin: 0px 10px 10px 10px;
-  float: left;
-  height: 530px;
-  margin: 10px;
+  width: 65%;
 }
 .userInfo {
   display: inline;
@@ -277,6 +322,8 @@ img.logo {
   color: white;
   text-shadow: 0px 1px 0px #443f3f;
   text-align: center;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 .bodyP {
   margin-top: 75px;
@@ -287,6 +334,11 @@ img.logo {
 .libDiv div {
   float: right;
   margin-left: 2%;
+}
+#historyDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 ul.rig {
   list-style: none;
@@ -327,7 +379,8 @@ ul.rig li h3 {
   font-family: 'Raleway', sans-serif;
 }
 .drinkHeader {
-  background: rgba(54, 219, 172, 0.4);
+  background-color: rgba(166, 211, 203, 0.66);
+  text-align: center;
   height: 475px;
   width: 42%;
   margin-top: 100px;
@@ -335,11 +388,10 @@ ul.rig li h3 {
   border-radius: 2px;
 }
 .drinkHeader {
-  text-align: center;
   color: white;
   font-weight: lighter;
-  margin: auto;
   margin-top: 100px;
+  margin: auto;
 }
 div.drinkHeader h1 {
   margin-top: 20px;
@@ -355,12 +407,25 @@ div.drinkHeader h1 {
   font-family: 'Raleway', sans-serif;
 }
 .drinkDescriptions {
-  margin: auto;
   margin-top: 10px;
-  padding: 5px;
-  display: block;
-  position: fixed;
   width: 90%;
+}
+.returnToProf {
+  padding: 10px 15px;
+  margin-top: 5%;
+  background-color: #AD8484;
+  border: none;
+  border-radius: 3px;
+}
+.returnToProf a {
+  text-decoration: none;
+  color: #eeeef1;
+  font-size: 20px;
+}
+.returnToProf:hover {
+  transform: scale(1.025);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+  transition: all .3s;
 }
 .drinkList {
   list-style: none;
@@ -368,7 +433,6 @@ div.drinkHeader h1 {
   font-family: 'Cabin', sans-serif;
   line-height: 1.5em;
   text-align: center;
-  width: 38%;
 }
 .drinkList {
   list-style: none;
@@ -453,6 +517,9 @@ footer {
 .regLog {
   margin: 20px;
 }
+/*li {
+	display:block;
+}*/
 .select-hidden {
   display: none;
   visibility: hidden;
@@ -463,16 +530,13 @@ footer {
   display: inline-block;
   position: relative;
   font-size: 16px;
-  color: white;
+  color: #eeeef1;
   width: 60%;
 }
 .select-styled {
-  position: absolute;
   right: 0;
-  bottom: -41px;
+  bottom: 0px;
   left: 0;
-  background-color: black;
-  padding: 16px 21px;
   @include transition(all 0.2s ease-in);
 }
 .select-styled:after {
@@ -485,16 +549,16 @@ footer {
   right: 10px;
 }
 .select-styled:hover {
-  background-color: #22a9b9;
+  background-color: #9ab0a6;
 }
 .select-styled:active,
 .select-styled.active {
-  background-color: #209dac;
+  background-color: #92a99e;
 }
 .select-styled:active:after,
 .select-styled.active:after {
   top: 9px;
-  border-color: transparent transparent #fff transparent;
+  border-color: transparent transparent #eeeef1 transparent;
 }
 .select-options {
   display: none;
@@ -506,20 +570,21 @@ footer {
   margin: 0;
   padding: 0;
   list-style: none;
+  /*  background-color: darken(@green, 5);*/
 }
 .select-options li {
+  display: block;
   margin: 0;
   padding: 12px 0;
   text-indent: 15px;
-  border-top: 1px solid #1c8a97;
-  @include transition(all 0.15s ease-in);
+  border-bottom: 1px solid #4a1b1b;
+  background-color: #A0B4AB;
+  font-size: 22px;
+  /*    @include transition(all 0.15s ease-in);*/
 }
 .select-options li:hover {
-  color: #24b1c2;
-  background: #fff;
-}
-.select-options li[rel="hide"] {
-  display: none;
+  color: white;
+  background-color: #A6D3CB;
 }
 @media screen and (max-width: 600px) {
   body {
