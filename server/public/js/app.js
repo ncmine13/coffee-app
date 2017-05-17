@@ -247,6 +247,8 @@ $('select').each(function(){
 			}
 		}
         $list.hide();
+        console.log("hiding list")
+        $('#mainPageQ').addClass('shrinkMainPageQ');
     });
 
 

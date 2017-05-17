@@ -1,21 +1,25 @@
-<div class="drinkBody">
-<div class ="drinkSpecs">
-	<div class="drinkHeader">
-		<h1 id="ourRec">Our recommendation: </h1>
-	<div>
-		<h2 class ="drinkName">{{name}}</h2>
-	</div>
-	<div class="pic">
-		<img class="image" src="{{image}}">
-	</div>
-		<div class="drinkDescriptions">
-			<ul class="drinkList">
-				<li> {{type}} </li>
-				<li> {{cravingSatisfied}} </li>
-				<li> {{calories}} </li>
-				<li> {{ingredients}} </li>
-			</ul>
-		</div>
-	<button class="returnToProf"><a href="/user/profile">Return to Profile</a></button>
+<a style="color:white;" class="logout"href="/user/logout">Log Out</a>
+<div class="ourRecDiv">
+	<h1 id="ourRec">Our recommendation: </h1>
 </div>
+<div class ="drinkRecBody">
+	<div class="recDiv">
+		<div class="drinkRecDiv">
+			<div class="recNameDiv">
+				<h2 class ="drinkName">{{name}}</h2>
+			</div>
+			<div class="pic">
+				<img class="image" src="{{image}}">
+			</div>
+			<div class="drinkDescriptions">
+				<ul class="drinkList">
+					<li> {{type}} </li>
+					<li> {{cravingSatisfied}} </li>
+					<li> {{calories}} </li>
+					<li> {{ingredients}} </li>
+				</ul>
+			</div>
+		</div>
+		<button class="returnToProf"><a href="/user/profile">Return to Profile</a></button>
+	<div>
 </div>

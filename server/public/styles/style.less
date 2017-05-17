@@ -27,39 +27,7 @@ body{
 	font-family: 'Raleway', sans-serif;
 
 
-.header{
-/*	background: @lightGray;
-	height: 70px;
-	width: 100%;
-	top: 0px;
-	position: fixed;
-	margin: 0;
-	padding: 0;*/
 
-
-	ul{
-		text-align: right;
-		display: inline;
-		float: right;
-		margin: 20px 0px 10px 10px;
-
-		li{
-			padding: 6px 13px 5px 12px;
-			text-decoration: none;
-			display: inline-block;
-			margin: 0px 10px 5px 5px;
-			font-size: 20px;
-			color: @redBrown;
-			align-content: flex-end;
-			font-family: 'Vollkorn', serif;
-			letter-spacing: 1.5px;
-
-		}
-		li:hover{
-			color: white;
-		}
-	}
-}
 
 #reg-title{
 	text-align: center;
@@ -128,17 +96,11 @@ body{
 
 }
 
-.main{
-	margin: 10px;
-	display: inline;
-}
-
 .error{
 	display: flex;
 	justify-content: center;
-	p{
+	p {
 		text-align: center;
-		font-family: 'Cabin', sans-serif;
 	}
 }
 
@@ -182,6 +144,7 @@ body{
     padding: 10px;
 }
 
+
 #mainPageQ {
 	margin-top: 3%;
 	display: flex;
@@ -218,6 +181,11 @@ body{
 	}
 }
 
+.shrinkMainPageQ {
+	transform: scale(0.75);
+	transition: all .5s;
+}
+
 h1 {
 	color: white;
 }
@@ -228,7 +196,7 @@ h1 {
 
 
 
-.mainquestion{
+.mainQuestion{
 	display: flex;
 	flex-direction: column;
 
@@ -260,24 +228,28 @@ h1 {
 	}
 }
 
-img.logo{
-	width: 5em;
-	margin: -3px 0px 0px 10px;
-	display: inline;
+
+.ourRecDiv {
+	#ourRec {
+		text-align: left;
+		margin: 3%;
+		font-weight: lighter;
+	}
 }
-.drinkSpecs {
+.drinkRecBody {
 	display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 6%;
+
+
 }
+
 .recommendDrink{
 	padding: 20px 10px;
 	width: 220px;
 	border: none;
 	border-radius: 4px;
 	font-size: 24px;
-	font-family: 'Cabin', sans-serif;
 	font-weight: bold;
 	color: white;
 	margin: 150px 12px 0px 22px;
@@ -298,7 +270,6 @@ img.logo{
 	border: none;
 	border-radius: 4px;
 	font-size: 24px;
-	font-family: 'Cabin', sans-serif;
 	font-weight: bold;
 	color: white;
 	margin: 40px 12px 40px 22px;
@@ -313,17 +284,7 @@ img.logo{
 	transition: all .2s;
 }
 
-.lists{
-	margin: 0px 10px 12px 10px;
-	padding: 5px;
-	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
-	color: white;
-	text-shadow: 0px 1px 0px #443f3f;
-	border-radius: 3px;
-	background-color: rgba(38, 11, 2, 0.4);
-	border: 1px solid rgba(169, 169, 169, 0.22);
 
-}
 
 .attrH{
 	margin: 17px;
@@ -357,13 +318,6 @@ img.logo{
 	border-radius: 3px;
 }
 
-.favDrinksScroll{
-	overflow-y: auto;
-	max-height: 71vh;
-	margin: 0px;
-	padding: 0px;
-	margin-top: 5px;
-}
 .favDrinkTitle{
 	font-size: 35px;
 	margin: 15px;
@@ -373,6 +327,47 @@ img.logo{
 	font-weight: lighter;
     letter-spacing: 2px;
 }
+
+.favDrinksScroll{
+	overflow-y: auto;
+	max-height: 71vh;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 5px;
+
+	.lists{
+		margin: 0px 10px 12px 10px;
+		padding: 5px;
+		box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+		color: white;
+		text-shadow: 0px 1px 0px #443f3f;
+		border-radius: 3px;
+		background-color: rgba(38, 11, 2, 0.4);
+		border: 1px solid rgba(169, 169, 169, 0.22);
+
+	}
+
+}
+
+ul{
+
+	li{
+		padding: 6px 13px 5px 12px;
+		
+		display: inline-block;
+		margin: 0px 10px 5px 5px;
+		font-size: 20px;
+		
+		align-content: flex-end;
+
+
+	}
+}
+
+
+
+
+
 .bodyP{
 	margin-top: 75px;
 }
@@ -435,24 +430,7 @@ ul.rig li h3 {
 }
 
 
-.drinkHeader {
-	background-color: rgba(166, 211, 203, 0.66);
-	text-align: center;
-	height: 475px;
-	width: 42%;
-	margin-top: 100px;
-	margin-left: 27%;
-	border-radius: 2px;
-}
 
-.drinkHeader {
-	
-	color: white;
-	font-weight: lighter;
-	margin-top: 100px;
-	margin: auto;
-	
-}
 
 div.drinkHeader h1 {
 	margin-top: 20px;
@@ -496,7 +474,6 @@ div.drinkHeader h1 {
 .drinkList {
 	list-style: none;
 	color: white;
-	font-family: 'Cabin', sans-serif;
 	line-height: 1.5em;
 	text-align: center;
 }
@@ -511,11 +488,6 @@ div.drinkHeader h1 {
 	margin-top: 8px;
 	letter-spacing: 0.75px;
 	font-weight: bold;
-}
-
-.drinkBody{
-	display: block;
-	margin: auto;
 }
 
 .image {
@@ -549,43 +521,6 @@ div.drinkHeader h1 {
 #listID {
 	margin-bottom: 10px;
 }
-
-#ourRec {
-	text-align: center;
-	color: white;
-	padding-top: 15px;
-	font-family: 'Raleway', sans-serif;
-}
-
-.col-Left {
-	width: 23%;
-	margin-left: 2%;
-	max-height: 413px;
-}
-
-.col-Right {
-	width: 49%;
-	border-radius: 4px;
-	float: right;
-	margin: 10px;
-	height: 500px;
-}
-
-.col-Mid {
-	text-align: center;
-	font-family: 'Raleway', sans-serif;
-	width: 23%;
-	float: left;
-	display: inline-block;
-}
-
-
-.prof-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
 
 
 footer {
@@ -668,9 +603,14 @@ footer {
     margin: 0;
     padding: 12px 0;
     text-indent: 15px;
+    text-decoration: none;
     border-bottom: 1px solid darken(@redBrown, 10);
     background-color: @green;
+    color: @redBrown;
     font-size: 22px;
+	font-family: 'Vollkorn', serif;
+	text-align: center;
+	letter-spacing: 1.5px;
 /*    @include transition(all 0.15s ease-in);*/
 	}
   li:hover {
@@ -678,6 +618,8 @@ footer {
     background-color: @lightGreen;
     }
   }
+
+
 
 
 
