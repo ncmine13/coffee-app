@@ -8,6 +8,7 @@
 @lightBrown: #AD8484;
 @green: #A0B4AB;
 @lightGreen: #A6D3CB;
+@transLightGreen: rgba(166, 211, 203, 0.8);
 @blue: #B9F3E9;
 
 html{
@@ -187,7 +188,7 @@ body{
 }
 
 h1 {
-	color: white;
+	color: @lightGray;
 }
 
 .hidden {
@@ -229,40 +230,97 @@ h1 {
 }
 
 
-.ourRecDiv {
-	#ourRec {
-		text-align: left;
-		margin: 3%;
-		font-weight: lighter;
-	}
+
+#ourRec {
+	text-align: left;
+	margin: 3%;
+	font-size: 45px;
+	font-weight: lighter;
 }
 .drinkRecBody {
 	display: flex;
     flex-direction: column;
     align-items: center;
 
+    .drinkRecDiv {
+    	background-color: @transLightGreen;
+    	width: 70%;
 
+    	.drink-col-left {
+    		float:left;
+    		width: 45%;
+    		margin: 4% 0%;
+    		.recNameDiv {
+    			.drinkName {
+					font-size: 45px;
+					letter-spacing: 1px;
+					margin: 0 15%;
+					color: @lightGray;
+					font-family: 'Raleway', sans-serif;
+				}
+
+    		}
+    		.pic {
+    			.image {
+					border-radius: 5px;
+					box-shadow: 1px 1px 5px rgba(35, 30, 30, 0.4);
+					height: 60%;
+					display: block;
+					margin: 5% 15% 0% 15%;
+				}
+
+    		}
+
+    	}
+    	.drink-col-right {
+    		float:left;
+    		width: 55%;
+    		margin: 4% 0%;
+
+    		.drinkDescriptions {
+    			margin: 7% 5%;
+
+    			.drinkList {
+					text-align: left;
+					color: white;
+					line-height: 1.2em;
+					letter-spacing: 1px;
+					font-size: 18px;
+
+					li {
+						margin-top: 15px;
+					}
+				}
+    		}
+    		.drinkButtonDiv {
+    			float:right;
+    			margin-right: 15%;
+    			margin-top: 6%;
+
+    			.returnToProf {
+					padding: 15px 20px;
+					margin-top: 5%;
+					margin-bottom: 5%;
+					background-color: @lightBrown;
+					border: none;
+				    border-radius: 3px;
+				    box-shadow: 1px 1px 3px rgba(35, 30, 30, 0.5);
+					a {
+						text-decoration: none;
+						color: @lightGray;
+						font-size: 25px;
+					}
+				}
+				.returnToProf:hover {
+					transform: scale(1.025);
+					box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+					transition: all .3s;
+				}
+    		}
+    	}
+    }
 }
 
-.recommendDrink{
-	padding: 20px 10px;
-	width: 220px;
-	border: none;
-	border-radius: 4px;
-	font-size: 24px;
-	font-weight: bold;
-	color: white;
-	margin: 150px 12px 0px 22px;
-	background-color: #bce0d6;
-	color: #15921a;
-	text-shadow: 0px 0px 0px #443f3f;
-}
-
-.recommendDrink:hover{
-	transform: scale(1.025);
-	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
-	transition: all .2s;
-}
 
 .drinkLibrary{
 	padding: 20px 10px;
@@ -349,24 +407,6 @@ h1 {
 
 }
 
-ul{
-
-	li{
-		padding: 6px 13px 5px 12px;
-		
-		display: inline-block;
-		margin: 0px 10px 5px 5px;
-		font-size: 20px;
-		
-		align-content: flex-end;
-
-
-	}
-}
-
-
-
-
 
 .bodyP{
 	margin-top: 75px;
@@ -432,73 +472,7 @@ ul.rig li h3 {
 
 
 
-div.drinkHeader h1 {
-	margin-top: 20px;
-}
 
-.drinkName {
-	font-size: 45px;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	margin-top: -10px;
-	color: white;
-	letter-spacing: 1px;
-	font-family: 'Raleway', sans-serif;
-}
-
-.drinkDescriptions {
-	margin-top: 10px;
-	width: 90%;
-}
-.returnToProf {
-	padding: 10px 15px;
-	margin-top: 5%;
-	margin-bottom: 5%;
-	background-color: @lightBrown;
-	border: none;
-    border-radius: 3px;
-	a {
-		text-decoration: none;
-		color: @lightGray;
-		font-size: 20px;
-
-	}
-}
-.returnToProf:hover {
-	transform: scale(1.025);
-	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
-	transition: all .3s;
-}
-
-.drinkList {
-	list-style: none;
-	color: white;
-	line-height: 1.5em;
-	text-align: center;
-}
-
-.drinkList {
-	list-style: none;
-	color: white;
-	line-height: 1.8em;
-	text-align: center;
-	font-size: 14px;
-	font-family: 'Raleway', sans-serif;
-	margin-top: 8px;
-	letter-spacing: 0.75px;
-	font-weight: bold;
-}
-
-.image {
-	border-radius: 5px;
-	box-shadow: 1px 1px 5px rgba(35, 30, 30, 0.4);
-	height: 200px;
-	text-align: center;
-	margin: auto;
-	margin-top: -20px;
-	display: block;
-}
 
 .internalList {
 	font-size: 12px;
@@ -536,16 +510,6 @@ footer {
 .regLog {
 	margin: 20px;
 }
-
-@background: #7dd7e4;
-@select-color: #fff;
-@select-background: #24b1c2;
-@select-width: 220px;
-@select-height: 40px;
-
-/*li {
-	display:block;
-}*/
 
 .select-hidden {
   display: none;
