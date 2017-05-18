@@ -1,5 +1,5 @@
 /*@brown: #6A2B15;
-@beige: #B59A7C;*/
+	@beige: #B59A7C;*/
 html {
   background-size: 100%;
   margin: 0px;
@@ -15,24 +15,24 @@ body {
   background-attachment: fixed;
   font-family: 'Raleway', sans-serif;
 }
-body #reg-title {
+#reg-title {
   text-align: center;
   margin: 10px 10px 5px 10px;
   font-size: 40px;
 }
-body #log-title {
+#log-title {
   text-align: center;
   margin: 30px;
   font-size: 40px;
   font-weight: lighter;
   letter-spacing: 2px;
 }
-body .form-container {
+.form-container {
   display: flex;
   justify-content: center;
   margin-top: 10%;
 }
-body .form-button {
+.form-button {
   justify-content: flex-end;
   border: none;
   border-radius: 2px;
@@ -41,18 +41,18 @@ body .form-button {
   background-color: #bce0d6;
   color: #16153b;
 }
-body .form-regLog {
+.form-regLog {
   margin: 10px;
   background: rgba(4, 4, 4, 0.48);
   border-radius: 2px;
   padding: 10px;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.65);
 }
-body .form-regLog h1 {
+.form-regLog h1 {
   color: #eeeef1;
   font-family: 'Raleway', sans-serif;
 }
-body .form-regLog input {
+.form-regLog input {
   padding: 17px 45px;
   margin: 5px 10px;
   font-size: 20px;
@@ -65,25 +65,25 @@ body .form-regLog input {
   color: #702828;
   background-color: #eeeef1;
 }
-body .form-regLog input.form-button {
+.form-regLog input.form-button {
   padding: 13px 20px;
   /*font-weight: bold;*/
   color: #eeeef1;
   background-color: #AD8484;
 }
-body .form-regLog input.form-button:hover {
+.form-regLog input.form-button:hover {
   transform: scale(1.025);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   transition: all .2s;
 }
-body .error {
+.error {
   display: flex;
   justify-content: center;
 }
-body .error p {
+.error p {
   text-align: center;
 }
-body .main {
+.main {
   background-color: rgba(54, 219, 172, 0.75);
   display: block;
   width: 100%;
@@ -92,7 +92,7 @@ body .main {
   margin: 0px;
   margin-top: 95px;
 }
-body .buttons {
+.buttons {
   padding: 30px 10px;
   width: 250px;
   border: none;
@@ -103,75 +103,75 @@ body .buttons {
   background-color: #bce0d6;
   color: #16153b;
 }
-body .buttons:hover {
+.buttons:hover {
   transform: scale(1.025);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   transition: all .2s;
 }
-body .username {
+.username {
   font-size: 45px;
   text-align: left;
   margin: 10px;
   color: white;
   padding-left: 33px;
 }
-body .logout {
+.logout {
   display: block;
   padding: 10px;
 }
-body #mainPageQ {
+#mainPageQ {
   margin-top: 3%;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-body #mainPageQ .colleft {
+#mainPageQ .colleft {
   width: 50%;
 }
-body #mainPageQ .colleft h1 {
+#mainPageQ .colleft h1 {
   font-weight: lighter;
   text-align: right;
   margin-right: 5%;
 }
-body #mainPageQ .colright {
+#mainPageQ .colright {
   width: 50%;
 }
-body #mainPageQ .colright .select {
+#mainPageQ .colright .select {
   font-size: 30px;
   width: 70%;
   margin-right: 5%;
   font-weight: lighter;
   text-align: center;
 }
-body #mainPageQ .colright .select .select-styled {
+#mainPageQ .colright .select .select-styled {
   padding: 5% 10%;
   border: 2px solid white;
   border-radius: 2px;
 }
-body #mainPageQ .colright .select:hover {
+#mainPageQ .colright .select:hover {
   background-color: #B9F3E9;
   /*			opacity: .7;*/
   color: #260B02;
   transition: all 0.2s ease-in;
 }
-body .shrinkMainPageQ {
+.shrinkMainPageQ {
   transform: scale(0.75);
   transition: all .5s;
 }
-body h1 {
+h1 {
   color: #eeeef1;
 }
-body .hidden {
+.hidden {
   display: none;
 }
-body .mainQuestion {
+.mainQuestion {
   display: flex;
   flex-direction: column;
 }
-body .mainQuestion .h1Holder {
+.mainQuestion .h1Holder {
   margin-left: 15%;
 }
-body .mainQuestion .h1Holder .do-you-want {
+.mainQuestion .h1Holder .do-you-want {
   font-family: 'Raleway', sans-serif;
   font-weight: lighter;
   font-size: 55px;
@@ -180,75 +180,75 @@ body .mainQuestion .h1Holder .do-you-want {
   width: 100%;
   letter-spacing: 1.5px;
 }
-body .mainQuestion .buttonDiv {
+.mainQuestion .buttonDiv {
   display: flex;
   justify-content: center;
   margin: 5%;
 }
-body .mainQuestion .buttonDiv button {
+.mainQuestion .buttonDiv button {
   color: #260B02;
 }
-body .mainQuestion .buttonDiv .left-option {
+.mainQuestion .buttonDiv .left-option {
   margin-right: 15%;
 }
-body #ourRec {
+#ourRec {
   text-align: left;
   margin: 3%;
   font-size: 45px;
   font-weight: lighter;
 }
-body .drinkRecBody {
+.drinkRecBody {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body .drinkRecBody .drinkRecDiv {
+.drinkRecBody .drinkRecDiv {
   background-color: rgba(166, 211, 203, 0.8);
   width: 70%;
 }
-body .drinkRecBody .drinkRecDiv .drink-col-left {
+.drinkRecBody .drinkRecDiv .drink-col-left {
   float: left;
   width: 45%;
   margin: 4% 0%;
 }
-body .drinkRecBody .drinkRecDiv .drink-col-left .recNameDiv .drinkName {
+.drinkRecBody .drinkRecDiv .drink-col-left .recNameDiv .drinkName {
   font-size: 45px;
   letter-spacing: 1px;
   margin: 0 15%;
   color: #eeeef1;
   font-family: 'Raleway', sans-serif;
 }
-body .drinkRecBody .drinkRecDiv .drink-col-left .pic .image {
+.drinkRecBody .drinkRecDiv .drink-col-left .pic .image {
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(35, 30, 30, 0.4);
   height: 60%;
   display: block;
   margin: 5% 15% 0% 15%;
 }
-body .drinkRecBody .drinkRecDiv .drink-col-right {
+.drinkRecBody .drinkRecDiv .drink-col-right {
   float: left;
   width: 55%;
   margin: 4% 0%;
 }
-body .drinkRecBody .drinkRecDiv .drink-col-right .drinkDescriptions {
+.drinkRecBody .drinkRecDiv .drink-col-right .drinkDescriptions {
   margin: 7% 5%;
 }
-body .drinkRecBody .drinkRecDiv .drink-col-right .drinkDescriptions .drinkList {
+.drinkRecBody .drinkRecDiv .drink-col-right .drinkDescriptions .drinkList {
   text-align: left;
   color: white;
   line-height: 1.2em;
   letter-spacing: 1px;
   font-size: 18px;
 }
-body .drinkRecBody .drinkRecDiv .drink-col-right .drinkDescriptions .drinkList li {
+.drinkRecBody .drinkRecDiv .drink-col-right .drinkDescriptions .drinkList li {
   margin-top: 15px;
 }
-body .drinkRecBody .drinkRecDiv .drink-col-right .drinkButtonDiv {
+.drinkRecBody .drinkRecDiv .drink-col-right .drinkButtonDiv {
   float: right;
   margin-right: 15%;
   margin-top: 6%;
 }
-body .drinkRecBody .drinkRecDiv .drink-col-right .drinkButtonDiv .returnToProf {
+.drinkRecBody .drinkRecDiv .drink-col-right .drinkButtonDiv .returnToProf {
   padding: 15px 20px;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -257,17 +257,17 @@ body .drinkRecBody .drinkRecDiv .drink-col-right .drinkButtonDiv .returnToProf {
   border-radius: 3px;
   box-shadow: 1px 1px 3px rgba(35, 30, 30, 0.5);
 }
-body .drinkRecBody .drinkRecDiv .drink-col-right .drinkButtonDiv .returnToProf a {
+.drinkRecBody .drinkRecDiv .drink-col-right .drinkButtonDiv .returnToProf a {
   text-decoration: none;
   color: #eeeef1;
   font-size: 25px;
 }
-body .drinkRecBody .drinkRecDiv .drink-col-right .drinkButtonDiv .returnToProf:hover {
+.drinkRecBody .drinkRecDiv .drink-col-right .drinkButtonDiv .returnToProf:hover {
   transform: scale(1.025);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   transition: all .3s;
 }
-body .drinkLibrary {
+.drinkLibrary {
   padding: 20px 10px;
   width: 220px;
   border: none;
@@ -280,19 +280,19 @@ body .drinkLibrary {
   color: #15921a;
   text-shadow: 0px 0px 0px #443f3f;
 }
-body .drinkLibrary:hover {
+.drinkLibrary:hover {
   transform: scale(1.025);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   transition: all .2s;
 }
-body .attrH {
+.attrH {
   margin: 17px;
   font-size: 1.5em;
   text-shadow: 0px 1px 0px #443f3f;
   font-weight: lighter;
   letter-spacing: 2px;
 }
-body .buttonsP {
+.buttonsP {
   margin-top: 6px;
   color: white;
   text-shadow: 0px 1px 0px #443f3f;
@@ -301,10 +301,10 @@ body .buttonsP {
   letter-spacing: 1.5px;
   font-family: 'Raleway', sans-serif;
 }
-body .drinks-container {
+.drinks-container {
   width: 65%;
 }
-body .userInfo {
+.userInfo {
   display: inline;
   background: rgba(54, 219, 172, 0.5);
   width: 25%;
@@ -314,7 +314,7 @@ body .userInfo {
   margin: 85px 10px 10px 10px;
   border-radius: 3px;
 }
-body .favDrinkTitle {
+.favDrinkTitle {
   font-size: 35px;
   margin: 15px;
   color: white;
@@ -323,14 +323,14 @@ body .favDrinkTitle {
   font-weight: lighter;
   letter-spacing: 2px;
 }
-body .favDrinksScroll {
+.favDrinksScroll {
   overflow-y: auto;
   max-height: 71vh;
   margin: 0px;
   padding: 0px;
   margin-top: 5px;
 }
-body .favDrinksScroll .lists {
+.favDrinksScroll .lists {
   margin: 0px 10px 12px 10px;
   padding: 5px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
@@ -340,26 +340,28 @@ body .favDrinksScroll .lists {
   background-color: rgba(38, 11, 2, 0.4);
   border: 1px solid rgba(169, 169, 169, 0.22);
 }
-body .bodyP {
+.bodyP {
   margin-top: 75px;
 }
-body .libDiv {
+.libDiv {
   margin: 10% 4%;
 }
-body .libDiv div {
+.libDiv div {
   float: right;
   margin-left: 2%;
 }
-body #historyDiv {
+#historyDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body ul.rig {
+ul.rig {
   list-style: none;
+  list-style-type: none;
+  padding: 0px;
   font-size: 0px;
 }
-body ul.rig li {
+ul.rig li {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
   padding: 20px;
@@ -367,50 +369,50 @@ body ul.rig li {
   text-align: center;
   color: white;
 }
-body ul.rig li h3 {
+ul.rig li h3 {
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: lighter;
 }
-body .libraryImage {
+.libraryImage {
   height: 50%;
   border-radius: 4px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 2px 1px 5px rgba(35, 30, 30, 0.8);
 }
-body .list-container {
+.list-container {
   display: inline-block;
 }
-body .thumbnail {
+.thumbnail {
   margin: 0px 0px 10px 20px;
   height: 150px;
   border-radius: 4px;
   margin-left: 20px;
   margin-top: 0px;
 }
-body .internalList {
+.internalList {
   list-style: none;
   font-size: 13px;
   font-family: 'Raleway', sans-serif;
 }
-body .internalList {
+.internalList {
   font-size: 12px;
   font-family: 'Raleway', sans-serif;
 }
-body .recc {
+.recc {
   margin: 10px;
 }
-body #pro-list {
+#pro-list {
   max-width: 320px;
   line-height: 32px;
   clear: both;
   float: left;
   margin-left: -20px;
 }
-body #listID {
+#listID {
   margin-bottom: 10px;
 }
-body footer {
+footer {
   font-size: 13px;
   position: fixed;
   bottom: 30px;
@@ -419,15 +421,15 @@ body footer {
   text-shadow: 0.5px 2px 0 rgba(0, 0, 0, 0.2);
   letter-spacing: 2px;
 }
-body .regLog {
+.regLog {
   margin: 20px;
 }
-body .select-hidden {
+.select-hidden {
   display: none;
   visibility: hidden;
   padding-right: 10px;
 }
-body .select {
+.select {
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -435,13 +437,13 @@ body .select {
   color: #eeeef1;
   width: 60%;
 }
-body .select-styled {
+.select-styled {
   right: 0;
   bottom: 0px;
   left: 0;
   @include transition(all 0.2s ease-in);
 }
-body .select-styled:after {
+.select-styled:after {
   content: "";
   width: 0;
   height: 0;
@@ -450,19 +452,19 @@ body .select-styled:after {
   top: 16px;
   right: 10px;
 }
-body .select-styled:hover {
+.select-styled:hover {
   background-color: #9ab0a6;
 }
-body .select-styled:active,
-body .select-styled.active {
+.select-styled:active,
+.select-styled.active {
   background-color: #92a99e;
 }
-body .select-styled:active:after,
-body .select-styled.active:after {
+.select-styled:active:after,
+.select-styled.active:after {
   top: 9px;
   border-color: transparent transparent #eeeef1 transparent;
 }
-body .select-options {
+.select-options {
   display: none;
   position: absolute;
   top: 100%;
@@ -474,11 +476,10 @@ body .select-options {
   list-style: none;
   /*  background-color: darken(@green, 5);*/
 }
-body .select-options li {
+.select-options li {
   display: block;
   margin: 0;
   padding: 12px 0;
-  text-indent: 15px;
   text-decoration: none;
   border-bottom: 1px solid #4a1b1b;
   background-color: #A0B4AB;
@@ -489,12 +490,81 @@ body .select-options li {
   letter-spacing: 1.5px;
   /*    @include transition(all 0.15s ease-in);*/
 }
-body .select-options li:hover {
+.select-options li:hover {
   color: white;
   background-color: #A6D3CB;
 }
 @media screen and (max-width: 600px) {
-  body body {
+  body {
     background-size: cover;
+  }
+  body #mainPageQ {
+    display: block;
+  }
+  body #mainPageQ .colleft {
+    width: 100%;
+  }
+  body #mainPageQ .colleft h1 {
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 5%;
+    text-align: center;
+  }
+  body #mainPageQ .colright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  body #mainPageQ .colright .select {
+    margin: 0px;
+    margin-top: 20px;
+  }
+  body #mainPageQ .colright .select .select-styled {
+    font-size: 20px;
+  }
+  body #mainPageQ .colright .select-options li {
+    font-size: 15px;
+  }
+  body .container .drinks-container {
+    width: 80%;
+  }
+  body .container .drinks-container .favDrinkTitle {
+    font-size: 25px;
+    margin: 10px;
+  }
+  body .container .drinks-container .attrH {
+    margin: 15px;
+    font-size: 20px;
+    text-align: center;
+  }
+  body .container .drinks-container .list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .container .drinks-container .list-container img {
+    margin: 0px 0px 10px 0px;
+  }
+  body .container .drinks-container #listID {
+    margin-left: 0px;
+  }
+  body .container .drinks-container #listID #pro-list {
+    text-align: center;
+    margin-left: -40px;
+  }
+  body .container .libDiv {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  body .container .libDiv div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .container .libDiv div ul {
+    display: flex;
+    flex-direction: column;
   }
 }
