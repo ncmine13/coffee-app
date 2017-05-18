@@ -526,6 +526,30 @@ footer {
   body #mainPageQ .colright .select-options li {
     font-size: 15px;
   }
+  body #questionDiv .mainQuestion .h1Holder {
+    margin-left: 0;
+    text-align: center;
+  }
+  body #questionDiv .mainQuestion .h1Holder h1 {
+    font-size: 20px;
+  }
+  body #questionDiv .mainQuestion .buttonDiv {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+  }
+  body #questionDiv .mainQuestion .buttonDiv .left-option {
+    margin-right: 0;
+    margin-bottom: 15%;
+  }
+  body #questionDiv .mainQuestion .buttonDiv .buttons {
+    padding: 20px;
+    font-size: 20px;
+    width: 175px;
+    background-color: #AD8484;
+    color: #eeeef1;
+    box-shadow: 2px 2px 5px rgba(35, 30, 30, 0.8);
+  }
   body .container .drinks-container {
     width: 80%;
   }
