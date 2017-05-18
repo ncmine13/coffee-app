@@ -550,6 +550,55 @@ footer {
     color: #eeeef1;
     box-shadow: 2px 2px 5px rgba(35, 30, 30, 0.8);
   }
+  body #ourRec {
+    font-size: 20px;
+  }
+  body .drinkRecBody {
+    margin-bottom: 30px;
+  }
+  body .drinkRecBody .drinkRecDiv {
+    width: 80%;
+  }
+  body .drinkRecBody .drinkRecDiv .drink-col-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  body .drinkRecBody .drinkRecDiv .drink-col-left .recNameDiv .drinkName {
+    font-size: 30px;
+    margin: 10px;
+  }
+  body .drinkRecBody .drinkRecDiv .drink-col-left .pic .image {
+    height: 150px;
+    margin: 0;
+  }
+  body .drinkRecBody .drinkRecDiv .drink-col-right {
+    width: 100%;
+  }
+  body .drinkRecBody .drinkRecDiv .drink-col-right .drinkDescriptions {
+    margin: 0% 5%;
+  }
+  body .drinkRecBody .drinkRecDiv .drink-col-right .drinkDescriptions .drinkList {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+  }
+  body .drinkRecBody .drinkRecDiv .drink-col-right .drinkDescriptions .drinkList li {
+    font-size: 13px;
+    margin-top: 7px;
+  }
+  body .drinkRecBody .drinkRecDiv .drink-col-right .drinkButtonDiv {
+    margin: 0;
+    float: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .drinkRecBody .drinkRecDiv .drink-col-right .drinkButtonDiv .returnToProf a {
+    font-size: 15px;
+  }
   body .container .drinks-container {
     width: 80%;
   }
