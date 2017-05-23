@@ -6,9 +6,5 @@ Run at https://yourcup.herokuapp.com/user/register
 The idea behind this project came from many experiences as a barista where I was confronted with "What should I get?" from customers at the register. Because there can be a sense of mystery and exclusivity in the coffee business, many people, including me before I began working in the industry, have trouble sorting through the fancy-sounding drinks in a cafe's menu. This app helps the indecisive user make a selection and the unknowledgable user navigate through the confusing lingo.
 
 
-Expansion plans:
--Link to Google Maps and allow users to find nearby shops
--Make entirely responsive
-
 ![1](wireframes/Wireframe1.jpg)
 ![2](wireframes/coffeeWireframe2.jpg)
